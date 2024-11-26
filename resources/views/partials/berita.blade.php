@@ -107,137 +107,140 @@
     </div>
 
     <section class="card-section py-5">
-    <div class="container">
-        <!-- Cards -->
-        <div class="row g-4">
-            <!-- Card Loop -->
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card shadow-sm">
-                    <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Title Number</h5>
-                        <p class="card-text text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small class="text-muted">32 Des 2024</small>
-                    </div>
-                </div>
-            </div>
-            <!-- Ulangi 7 kali untuk contoh -->
-            <!-- Salinan Card -->
-        </div>
-
-        <!-- Lihat Semua Data -->
-        <div class="text-center mt-4">
-            <button class="btn btn-outline-danger px-5 py-2">Lihat Semua Data</button>
-        </div>
+    <div class="text-center mb-4">
+            <h2 class="fw-bold headline-title">Daftar Data</h2>
     </div>
+        <div class="container">
+            <!-- Cards -->
+            <div class="row g-4">
+                <!-- Card Loop -->
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm">
+                        <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Title Number</h5>
+                            <p class="card-text text-muted">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet pretium sit odio non.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary w-100">Lihat Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">32 Des 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ulangi 7 kali untuk contoh -->
+                <!-- Salinan Card -->
+            </div>
+
+            <!-- Lihat Semua Data -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-danger px-5 py-2">Lihat Semua Data</button>
+            </div>
+        </div>
 </section>

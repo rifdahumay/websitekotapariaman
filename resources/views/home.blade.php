@@ -36,18 +36,13 @@
         }
 
         .content img {
-            width: 70px; /* Menyesuaikan ukuran lebar logo */
+            width: 100px; /* Ukuran lebar logo */
             height: auto;
-            margin-right: 20px; /* Menambahkan sedikit jarak ke kanan logo */
+            margin-bottom: 20px; /* Menambahkan jarak di bawah logo */
         }
 
         .content h1, .content h2 {
             margin: 0; /* Menghapus margin default */
-            text-align: left; /* Rata kiri */
-        }
-
-        .text-start {
-            text-align: left; /* Memastikan teks rata kiri */
         }
 
         .btn-warning {
@@ -71,7 +66,6 @@
         .card-container {
             margin-top: 40px;
         }
-        
 
         /* Ikon box styling */
         .icon-box {
@@ -134,16 +128,16 @@
 
         <!-- Content -->
         <div class="content">
-            <div class="d-flex align-items-center text-start">
-                <img src="/logos/Lambang_Kota_Pariaman.png" alt="Logo Kota Pariaman">
-                <div class="text-start">
-                    <h1>WEBSITE RESMI PEMERINTAH</h1>
-                    <h2>KOTA PARIAMAN</h2>
-                </div>
-            </div>
+            <!-- Logo -->
+            <img src="/logos/Lambang_Kota_Pariaman.png" alt="Logo Kota Pariaman">
+
+            <!-- Teks -->
+            <h1>WEBSITE RESMI PEMERINTAH</h1>
+            <h2>KOTA PARIAMAN</h2>
+
+            <!-- Tombol -->
             <p><a href="/landing" class="btn btn-warning">SITUS WEB KOTA</a></p>
         </div>
-
 
         <!-- Cards -->
         <div class="container card-container">

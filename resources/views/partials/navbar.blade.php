@@ -6,8 +6,8 @@
         </a>
         <!-- Title -->
         <div class="d-flex flex-column align-items-start">
-            <h1 class="m-0" style="font-size: 12px; font-weight: bold;">WEBSITE RESMI PEMERINTAH</h1>
-            <span style="font-size: 14px; font-weight: bold;">KOTA PARIAMAN</span>
+            <h1 class="m-0" style="font-size: 15px; font-weight: bold;">WEBSITE RESMI PEMERINTAH</h1>
+            <span style="font-size: 15px; font-weight: bold;">KOTA PARIAMAN</span>
             <span style="font-size: 12px;">www.pariamankota.go.id</span>
         </div>
         <!-- Navbar toggle button for mobile -->
@@ -26,7 +26,9 @@
                         Profil Kota
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                    <li><a class="dropdown-item" href="#visimisi">Visi Misi</a></li>
                         <li><a class="dropdown-item" href="#sejarah">Sejarah</a></li>
+                        <li><a class="dropdown-item" href="#lambang">Lambang Kota</a></li>
                         <li><a class="dropdown-item" href="#geografis">Geografis</a></li>
                         <li><a class="dropdown-item" href="#demografi">Demografi</a></li>
                     </ul>
@@ -37,13 +39,20 @@
                         Pemerintahan
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="pemerintahanDropdown">
-                        <li><a class="dropdown-item" href="#struktur-organisasi">Struktur Organisasi</a></li>
-                        <li><a class="dropdown-item" href="#visi-misi">Visi dan Misi</a></li>
-                        <li><a class="dropdown-item" href="#program-kerja">Program Kerja</a></li>
+                        <li><a class="dropdown-item" href="#eksekutif">Eksekutif</a></li>
+                        <li><a class="dropdown-item" href="#legislatif">Legislatif</a></li>
+                        <li><a class="dropdown-item" href="#perangkat">Perangkat Daerah</a></li>
+                        <li><a class="dropdown-item" href="#sekre">Sekretariat Daerah</a></li>
+                        <li><a class="dropdown-item" href="#kecamatan">Kecamatan</a></li>
+                        <li><a class="dropdown-item" href="#desa">Desa</a></li>
+                        <li><a class="dropdown-item" href="#kelurahan">Kelurahan</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" style="color: white;">Berita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Transparansi</a>
                 </li>
                 <!-- Dropdown Informasi -->
                 <li class="nav-item dropdown">
@@ -51,8 +60,12 @@
                         Informasi
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="informasiDropdown">
-                        <li><a class="dropdown-item" href="#agenda">Agenda Kota</a></li>
+                        <li><a class="dropdown-item" href="#layanan">Layanan</a></li>
+                        <li><a class="dropdown-item" href="#agenda">Agenda</a></li>
                         <li><a class="dropdown-item" href="#pengumuman">Pengumuman</a></li>
+                        <li><a class="dropdown-item" href="#infografis">Infografis</a></li>
+                        <li><a class="dropdown-item" href="#download">Download</a></li>
+                        <li><a class="dropdown-item" href="#penghargaan">Penghargaan</a></li>
                         <li><a class="dropdown-item" href="#faq">FAQ</a></li>
                     </ul>
                 </li>

@@ -35,43 +35,64 @@
                         </div>
                         <div class="card-body p-3">
                             <!-- Agenda Item 1 -->
+                            <!-- Agenda Item 1 -->
                             <div class="agenda-item p-3 mb-3" style="border-bottom: 2px solid #ccc; padding-bottom: 20px;">
-                                <img src="/logos/Cover image.png" alt="Agenda 1" class="img-fluid mb-3" style="border-radius: 8px;">
-                                <h6 class="agenda-title">Agenda 1: Rapat Koordinasi</h6>
-                                <p class="agenda-details">Tanggal: 27 November 2024 | Waktu: 10:00 WIB</p>
-                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#agenda1" aria-expanded="false" aria-controls="agenda1">Buka Agenda</button>
-                                <div class="collapse mt-3" id="agenda1">
-                                    <div class="card card-body">
-                                        <p>Deskripsi lengkap agenda 1, topik yang akan dibahas, dan detail lainnya yang diperlukan.</p>
-                                    </div>
+                            <img src="/logos/Cover image.png" alt="Agenda 1" class="img-fluid mb-3" style="border-radius: 8px;">
+                            <h6 class="agenda-title">Agenda 1: Rapat Koordinasi</h6>
+                            <p class="agenda-details d-flex align-items-center">
+                                <i class="bi bi-calendar-event me-2 text-primary"></i> 27 November 2024 
+                                <span class="mx-2">|</span> 
+                                <i class="bi bi-clock me-2 text-primary"></i> 10:00 WIB
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#agenda1" aria-expanded="false" aria-controls="agenda1">
+                                Buka Agenda
+                            </button>
+                            <div class="collapse mt-3" id="agenda1">
+                                <div class="card card-body">
+                                <p>Deskripsi lengkap agenda 1, topik yang akan dibahas, dan detail lainnya yang diperlukan.</p>
                                 </div>
+                            </div>
                             </div>
 
                             <!-- Agenda Item 2 -->
                             <div class="agenda-item p-3 mb-3" style="border-bottom: 2px solid #ccc; padding-bottom: 20px;">
-                                <img src="/logos/Cover image.png" alt="Agenda 2" class="img-fluid mb-3" style="border-radius: 8px;">
-                                <h6 class="agenda-title">Agenda 2: Workshop Teknologi</h6>
-                                <p class="agenda-details">Tanggal: 29 November 2024 | Waktu: 14:00 WIB</p>
-                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#agenda2" aria-expanded="false" aria-controls="agenda2">Buka Agenda</button>
-                                <div class="collapse mt-3" id="agenda2">
-                                    <div class="card card-body">
-                                        <p>Deskripsi lengkap agenda 2, topik yang akan dibahas, dan detail lainnya yang diperlukan.</p>
-                                    </div>
+                            <img src="/logos/Cover image.png" alt="Agenda 2" class="img-fluid mb-3" style="border-radius: 8px;">
+                            <h6 class="agenda-title">Agenda 2: Workshop Teknologi</h6>
+                            <p class="agenda-details d-flex align-items-center">
+                                <i class="bi bi-calendar-event me-2 text-primary"></i> 29 November 2024 
+                                <span class="mx-2">|</span> 
+                                <i class="bi bi-clock me-2 text-primary"></i> 14:00 WIB
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#agenda2" aria-expanded="false" aria-controls="agenda2">
+                                Buka Agenda
+                            </button>
+                            <div class="collapse mt-3" id="agenda2">
+                                <div class="card card-body">
+                                <p>Deskripsi lengkap agenda 2, topik yang akan dibahas, dan detail lainnya yang diperlukan.</p>
                                 </div>
+                            </div>
                             </div>
 
+
                             <!-- Agenda Item 3 -->
-                            <div class="agenda-item p-3 mb-3" style="border-bottom: 2px solid #ccc; padding-bottom: 20px;">
+                            <<div class="agenda-item p-3 mb-3" style="border-bottom: 2px solid #ccc; padding-bottom: 20px;">
                                 <img src="/logos/Cover image.png" alt="Agenda 3" class="img-fluid mb-3" style="border-radius: 8px;">
                                 <h6 class="agenda-title">Agenda 3: Seminar Pengembangan Karir</h6>
-                                <p class="agenda-details">Tanggal: 1 Desember 2024 | Waktu: 09:00 WIB</p>
-                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#agenda3" aria-expanded="false" aria-controls="agenda3">Buka Agenda</button>
+                                <p class="agenda-details d-flex align-items-center">
+                                    <i class="bi bi-calendar-event me-2 text-primary"></i> 1 Desember 2024 
+                                    <span class="mx-2">|</span> 
+                                    <i class="bi bi-clock me-2 text-primary"></i> 09:00 WIB
+                                </p>
+                                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#agenda3" aria-expanded="false" aria-controls="agenda3">
+                                    Buka Agenda
+                                </button>
                                 <div class="collapse mt-3" id="agenda3">
                                     <div class="card card-body">
-                                        <p>Deskripsi lengkap agenda 3, topik yang akan dibahas, dan detail lainnya yang diperlukan.</p>
+                                    <p>Deskripsi lengkap agenda 3, topik yang akan dibahas, dan detail lainnya yang diperlukan.</p>
                                     </div>
                                 </div>
-                            </div>
+                                </div>
+
                         </div>
                     </div>
                 </div>

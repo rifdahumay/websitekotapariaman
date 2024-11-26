@@ -139,7 +139,7 @@
     .gradient-footer p {
         margin: 0;
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: light;
     }
 
     .col-md-4 ul {

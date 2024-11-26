@@ -13,7 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #FFD700; /* Warna latar kuning */
+            background: linear-gradient(to bottom, #f0f8ff, #ffd700); /* Gradasi biru muda ke kuning */
             overflow: hidden;
         }
 
