@@ -1,32 +1,25 @@
-<!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@yield('title', 'Pariamankota Landing Page')</title>
+
+  <link rel="icon" href="/logos/Lambang Kota Pariaman.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/logos/Lambang_Kota_Pariaman.png" type="image/x-icon">
   
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-  
-  <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-  <!-- Animate.css for animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  
   <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <style>
-    /* Custom styles here */
+    
+
     body {
       font-family: 'Montserrat', sans-serif;
     }
@@ -45,50 +38,43 @@
       color: #f8f9fa !important;
     }
 
-    /* For active link underline */
-/* For active link underline */
-.nav-link.active {
-    border-bottom: 3px solid #ffcc00; /* Yellow underline for active links */
-}
+    .nav-link.active {
+        border-bottom: 3px solid #ffcc00; 
+    }
 
-/* Styling untuk arrow dropdown */
-.navbar-nav .nav-item .dropdown-toggle::after {
-    content: '\25BC'; /* Adds dropdown arrow */
-    font-size: 0.5em;  /* Ukuran lebih kecil untuk arrow */
-    padding-left: 5px;
-    transition: transform 0.3s ease-in-out; /* Animasi saat dropdown terbuka */
-}
+    .navbar-nav .nav-item .dropdown-toggle::after {
+        content: '\25BC'; 
+        font-size: 0.5em;       
+        padding-left: 5px;
+        transition: transform 0.3s ease-in-out; 
+    }
 
-/* Ubah posisi arrow dropdown ketika dropdown terbuka */
-.nav-item.dropdown.show .dropdown-toggle::after {
-    transform: rotate(180deg); /* Rotasi arrow saat dropdown terbuka */
-}
-
-/* Styling untuk dropdown di perangkat mobile */
-@media (max-width: 991px) {
-    .navbar-nav {
-        text-align: center;
+    .nav-item.dropdown.show .dropdown-toggle::after {
+        transform: rotate(180deg); 
     }
     
-    /* Styling untuk dropdown menu */
+    @media (max-width: 991px) {
+        .navbar-nav {
+            text-align: center;
+    }
+    
     .navbar-nav .dropdown-menu {
-        background-color: #3b3b3b; /* Warna latar belakang dropdown */
-        border-radius: 5px; /* Membuat sudut dropdown lebih lembut */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Menambahkan shadow agar dropdown lebih jelas */
-        width: 100%; /* Memastikan dropdown lebar penuh pada perangkat mobile */
+        background-color: #3b3b3b; 
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 100%; 
     }
 
-    /* Styling untuk item dropdown di mobile */
     .navbar-nav .dropdown-menu .dropdown-item {
         color: white;
         padding: 10px;
     }
 
     .navbar-nav .dropdown-menu .dropdown-item:hover {
-        background-color: #a51212; /* Warna hover item dropdown */
+        background-color: #a51212; 
     }
 
-    /* Navbar toggle button */
+
     .navbar-toggler {
         border-color: #a51212;
     }
@@ -97,21 +83,37 @@
         background-color: white;
     }
 
-    /* Custom styling untuk dropdown toggle di mobile */
     .nav-item.dropdown .nav-link {
         display: block;
     }
 }
 
-    
-
-    
     header {
       background: url('https://www.pariamankota.com/images/hero-bg.svg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
       padding: 100px 0;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+    header img {
+        height: 150px;
+        transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+        transform: scale(1.1); 
+    }
+
+    header h1 {
+        margin: 0;
     }
     .section-header {
       font-size: 36px;
@@ -120,44 +122,44 @@
       margin-bottom: 30px;
     }
     .headline-news {
-    background-color: #fff; /* Background putih untuk berita */
-    padding: 40px 0; /* Ruang atas dan bawah lebih besar */
+    background-color: #fff; 
+    padding: 40px 0; 
 }
 
-.headline-title {
-    background: linear-gradient(to right, #990000, #550000); /* Gradasi merah ke hitam */
-    color: white;
-    padding: 10px 30px;
-    border-radius: 5px;
-    display: inline-block;
-}
+    .headline-title {
+        background: linear-gradient(to right, #990000, #550000); 
+        color: white;
+        padding: 10px 30px;
+        border-radius: 5px;
+        display: inline-block;
+    }
 
-.news-item {
-    margin-bottom: 30px; /* Jarak antar berita dalam satu slide */
-}
+    .news-item {
+        margin-bottom: 30px; 
+    }
 
-.news-item img {
-    object-fit: cover;
-    width: 100%;
-    height: 250px; /* Atur tinggi gambar */
-}
+    .news-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px; 
+    }
 
-.news-content {
-    padding: 15px;
-}
+    .news-content {
+        padding: 15px;
+    }
 
-.news-content .badge {
-    font-size: 0.875rem;
-}
+    .news-content .badge {
+        font-size: 0.875rem;
+    }
 
-.news-content h4 {
-    font-size: 1.125rem;
-}
+    .news-content h4 {
+        font-size: 1.125rem;
+    }
 
-.news-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
+    .news-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 
 
     #typewriter {
@@ -166,13 +168,12 @@
     }
 
     #typewriter:after {
-        content: '|';  /* Placeholder */
+        content: '|';  
         position: absolute;
         right: 0;
         animation: blink 1s step-end infinite;
     }
 
-    /* Efek berkedip pada placeholder */
     @keyframes blink {
         50% {
             opacity: 0;
@@ -184,6 +185,75 @@
       color: white;
       text-align: center;
       padding: 20px;
+    }
+    footer {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .menu-info h5 {
+        margin-bottom: 1rem;
+    }
+
+    .menu-info ul {
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .menu-info ul li {
+        list-style: none;
+    }
+
+    .menu-info a {
+        display: block;
+        text-align: left;
+        color: #f8f9fa;
+    }
+
+    footer h5 {
+        color: #f8f9fa;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    footer a {
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #ffc107;
+    }
+
+    footer .border-light {
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    footer iframe {
+        border-radius: 8px;
+    }
+
+    .gradient-footer {
+        background: linear-gradient(to right, red, blue);
+        color: white;
+        padding: 10px 0;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .gradient-footer p {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: light;
+    }
+
+    .col-md-4 ul {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .col-md-4 ul li i {
+        color: #ffc107;
     }
     html {
       scroll-behavior: smooth;
@@ -201,9 +271,9 @@
         color: #6c757d;
     }
     .card {
-    width: 90%; /* Mengurangi lebar card */
-    max-width: 300px; /* Membatasi ukuran maksimal */
-    margin: 0 auto; /* Agar card terpusat */
+    width: 90%; 
+    max-width: 300px; 
+    margin: 0 auto; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -213,8 +283,8 @@
     }
 
     .card img {
-        height: 150px; /* Atur tinggi gambar */
-        object-fit: cover; /* Agar gambar proporsional */
+        height: 150px;
+        object-fit: cover; 
         transition: transform 0.3s ease, filter 0.3s ease;
     }
 
@@ -272,7 +342,6 @@
         filter: invert(1);
     }
 
-    /* Animations */
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -291,295 +360,584 @@
         width: 60px;
     }
 }
-.carousel-image {
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(70%);
-    transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
-}
-
-.carousel-item.active .carousel-image {
-    transform: scale(1.05);
-    filter: brightness(100%);
-    transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
-}
-
-.carousel-caption {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-}
-
-.overlay {
-    position: relative;
-}
-
-.overlay::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-    z-index: 1;
-}
-
-.carousel-caption {
-    position: absolute;
-    z-index: 2;
-    bottom: 10%;
-    left: 5%;
-    right: 5%;
-}
-
-.carousel-caption h2 {
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.carousel-caption p {
-    animation: fadeInUp 1.5s ease-in-out;
-}
-
-.carousel-caption .btn {
-    animation: fadeInUp 2s ease-in-out;
-}
-
-/* Animasi */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+    .carousel-image {
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(70%);
+        transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .carousel-item.active .carousel-image {
+        transform: scale(1.05);
+        filter: brightness(100%);
+        transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
     }
-}
 
-/* Indicators Customization */
-.carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.7);
-}
+    .carousel-caption {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
 
-.carousel-indicators .active {
-    background-color: rgba(255, 255, 255, 1);
-    width: 16px;
-    height: 16px;
-    transition: all 0.3s ease;
-}
+    .overlay {
+        position: relative;
+    }
 
-.carousel-indicators button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    transform: scale(1.1);
-}
+    .overlay::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+        z-index: 1;
+    }
 
-/* Add hover effects to buttons */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 0.8;
-}
+    .carousel-caption {
+        position: absolute;
+        z-index: 2;
+        bottom: 10%;
+        left: 5%;
+        right: 5%;
+    }
 
-.hover-news {
-    transition: all 0.3s ease-in-out;
-    padding: 10px;
-    border-radius: 8px;
+    .carousel-caption h2 {
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    .carousel-caption p {
+        animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .carousel-caption .btn {
+        animation: fadeInUp 2s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .carousel-indicators button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .carousel-indicators .active {
+        background-color: rgba(255, 255, 255, 1);
+        width: 16px;
+        height: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .carousel-indicators button:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: scale(1.1);
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        opacity: 0.8;
+    }
+
+    .hover-news {
+        transition: all 0.3s ease-in-out;
+        padding: 10px;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .hover-news:hover {
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .hover-news img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-news:hover img {
+        transform: scale(1.2);
+    }
+
+    .hover-news small {
+        transition: color 0.3s ease-in-out;
+    }
+
+    .hover-news:hover small {
+        color: #007bff;
+    }
+
+    .hover-news p {
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .hover-news:hover p {
+        color: #333;
+    }
+
+    .hover-news:hover {
+        background-color: #f0f0f0;
+        transform: scale(1.05);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .agenda-container {
+        min-height: 400px; 
+        width: 100%;  
+    }
+    .agenda-item {
+        margin-bottom: 20px; 
+    }
+    .agenda-item button {
+        width: 100%; 
+    }
+    .collapse {
+        margin-top: 10px;
+    }
+    .card {
+        max-width: 100%;  
+        width: 100%;
+    }
+    .agenda-item:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .agenda-item:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .agenda-item:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .agenda-container {
+        background: rgba(255, 255, 255, 0.2);  
+        backdrop-filter: blur(10px); 
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        background-color: rgba(0, 0, 0, 0.6); 
+    }
+    .custom-bg {
+        background: radial-gradient(circle, #d0f4f9, #f9faff, #fffceb, #fde7c5);
+        height: 100vh;
+        padding: 50px 0; 
+    }
+
+
+    .custom-bg {
+        background: radial-gradient(circle, #d0f4f9, #f9faff, #fffceb, #fde7c5);
+        height: auto; 
+        padding: 50px 0; 
+        position: relative; 
+    }
+
+
+    .custom-border, .custom-border-bottom {
+        position: absolute;
+        left: 0;
+        width: 100%; 
+        height: 10px; 
+        background: linear-gradient(90deg, #007bff, #ffff00); 
+        border-radius: 0px; 
+    }
+
+
+    .custom-border {
+        top: 0;
+    }
+
+    .custom-border-bottom {
+        bottom: 0;
+    }
+    
+    #agenda-pengumuman h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        background: linear-gradient(70deg, red, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+
+    .hover-news {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-news:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    }
+
+    .card-header {
+        color: #fff;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body p,
+    .card-body small {
+        color: #333;
+    }
+    .bg-warning {
+    background-color: #fdfd96 !important; 
     position: relative;
-    cursor: pointer;
-}
+    overflow: visible;
+    }
 
-.hover-news:hover {
-    background-color: #f8f9fa;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-
-.hover-news img {
+    .container.bg-warning img {
     transition: transform 0.3s ease-in-out;
-}
+    }
 
-.hover-news:hover img {
-    transform: scale(1.2);
-}
+    .container.bg-warning img:hover {
+    transform: scale(1.05); 
+    }
 
-.hover-news small {
-    transition: color 0.3s ease-in-out;
-}
+    .btn-danger {
+    transition: all 0.3s ease-in-out;
+    }
 
-.hover-news:hover small {
-    color: #007bff;
-}
+    .btn-danger:hover {
+    background-color: #d63c3c;
+    transform: scale(1.05);
+    }
 
-.hover-news p {
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
+    img {
+    max-width: 100%;
+    height: auto;
+    }
 
-.hover-news:hover p {
-    color: #333;
-}
-.custom-bg {
-    background: radial-gradient(circle, #d0f4f9, #f9faff, #fffceb, #fde7c5);
-    height: 100vh; /* Sesuaikan tinggi dengan kebutuhan */
-    padding: 50px 0; /* Padding opsional */
-}
+    .icon-container {
+        display: inline-block;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-/* Background dengan gradasi */
-.custom-bg {
-    background: radial-gradient(circle, #d0f4f9, #f9faff, #fffceb, #fde7c5);
-    height: auto; /* Menyesuaikan konten */
-    padding: 50px 0; /* Memberikan ruang vertikal */
-    position: relative; /* Dibutuhkan untuk menempatkan border */
-}
+    .vertical-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 2px;
+        background-color: #ddd;
+        margin: auto;
+    }
 
-/* Border gradasi di bagian atas */
-.custom-border, .custom-border-bottom {
-    position: absolute;
-    left: 0;
-    width: 100%; /* Lebar border sepanjang layar */
-    height: 10px; /* Ketebalan border */
-    background: linear-gradient(90deg, #007bff, #ffff00); /* Gradasi biru ke kuning */
-    border-radius: 0px; /* Tidak ada lengkungan pada sudut */
-}
+    .vertical-line:last-child {
+        display: none;
+    }
 
-/* Border bagian atas */
-.custom-border {
-    top: 0;
-}
+    h5 {
+        margin-bottom: 15px;
+    }
 
-/* Border bagian bawah */
-.custom-border-bottom {
-    bottom: 0;
-}
+    .custom-modal-animation .modal-dialog {
+        transform: translateY(-100px);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
 
-/* Judul dengan gradasi teks */
-#agenda-pengumuman h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    background: linear-gradient(70deg, red, black); /* Gradasi hitam dan merah */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    text-align: center;
-}
+    .custom-modal-animation.show .modal-dialog {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .carousel-container {
+            position: relative;
+            margin: 30px auto;
+            padding: 30px;
+            background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
 
-/* Hover animasi untuk berita */
-.hover-news {
+    .carousel-title {
+        margin-top: 20px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-inner {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 15px;
+    }
+
+    .card {
+        min-width: 280px;
+        max-width: 280px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 12px;
+    }
+
+    .btn-outline-primary {
+        border-radius: 25px;
+        font-size: 0.875rem;
+        color: #007bff;
+        border: 1px solid #007bff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 123, 255, 0.7);
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+        background-color: #007bff;
+    }
+
+    .custom-border {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background: linear-gradient(90deg, #007bff, #ffff00);
+        border-radius: 0;
+    }
+    #features .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-news:hover {
-    transform: translateY(-10px); /* Naik sedikit */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-}
-
-.card-header {
-    color: #fff;
-}
-
-.card {
-    background: #fff;
-    border-radius: 10px;
+    border: none;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.card-body p,
-.card-body small {
-    color: #333;
-}
-.bg-warning {
-  background-color: #fdfd96 !important; /* Warna kuning lembut */
-  position: relative;
-  overflow: visible; /* Agar gambar bisa keluar */
-}
+    #features .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
 
-.container.bg-warning img {
-  transition: transform 0.3s ease-in-out;
-}
+    #features .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #343a40;
+    }
 
-.container.bg-warning img:hover {
-  transform: scale(1.05); /* Efek hover jika ingin */
-}
+    #features .card-text {
+        font-size: 0.95rem;
+        color: #6c757d;
+    }
 
+    #features .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        font-weight: 500;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+    }
 
-.btn-danger {
-  transition: all 0.3s ease-in-out;
-}
+    #features .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
 
-.btn-danger:hover {
-  background-color: #d63c3c;
-  transform: scale(1.05);
-}
+    #features img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    .infografis-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+    .infografis-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
 
-.icon-container {
-    display: inline-block;
-    padding: 10px;
-    background: #f8f9fa;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    .infografis-card:hover img {
+        transform: scale(1.1);
+    }
 
-.vertical-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 2px;
-    background-color: #ddd;
-    margin: auto;
-}
+    .infografis-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+        color: #ffffff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        padding: 20px;
+    }
 
-.vertical-line:last-child {
-    display: none;
-}
+    .infografis-card:hover .infografis-overlay {
+        opacity: 1;
+    }
 
-h5 {
-    margin-bottom: 15px;
-}
+    .infografis-overlay h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-.custom-modal-animation .modal-dialog {
-    transform: translateY(-100px);
-    opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
+    .infografis-overlay p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
 
-.custom-modal-animation.show .modal-dialog {
-    transform: translateY(0);
-    opacity: 1;
-}
+    .infografis-overlay a {
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+    }
 
+    .infografis-overlay a:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+    .list-group-item {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    transition: all 0.3s ease;
+    }
+    .list-group-item:hover {
+        background-color: #f5f5f5;
+        color: #a51212;
+    }
+    .list-group-item.active {
+        background-color: #a51212;
+        color: white !important;
+        font-weight: bold;
+    }
+    .horizontal-layout {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 40px;
+        padding: 16px;
+    }
 
+    .service-card {
+        flex: 0 1 calc(25% - 16px); 
+        max-width: 250px; 
+    }
 
+    .service-card .card {
+        height: 100%; 
+    }
 
+    .service-card img {
+        object-fit: cover;
+        height: 150px; 
+        width: 100%; 
+    }
 
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        height: 100%; 
+    }
 
+    @media (max-width: 768px) {
+        .service-card {
+            flex: 0 1 calc(50% - 16px); 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .service-card {
+            flex: 0 1 calc(100% - 16px); 
+        }
+    }
+    
+    
+    
 
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
   @include('partials.navbar')
-
-  <!-- Main Content -->
   @yield('content')
-
-  <!-- Footer -->
   @include('partials.footer')
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
     const modernCarousel = document.getElementById('modernCarousel');
-
-    // Automatically add active class to the current page link
   $(document).ready(function () {
       var path = window.location.pathname;
       $('.navbar-nav .nav-item a').each(function () {
@@ -588,8 +946,7 @@ h5 {
           }
       });
   });
-
-
+  
   </script>
 </body>
 </html>

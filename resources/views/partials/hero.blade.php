@@ -1,4 +1,4 @@
-<!-- resources/views/partials/hero.blade.php -->
+
 <header style="position: relative; background: url('/logos/background.png') no-repeat center center/cover; height: 600px; width: 100vw; color: white; overflow: hidden; top: 30px;">
     
     <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center position-absolute text-center" style="top: -120px;">
@@ -39,27 +39,3 @@
         .deleteAll()
         .start();
 </script>
-
-<!-- Styling untuk Header -->
-<style>
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        text-align: center;
-    }
-
-    header img {
-        height: 150px;
-        transition: transform 0.3s ease;
-    }
-
-    header img:hover {
-        transform: scale(1.1); 
-    }
-
-    header h1 {
-        margin: 0;
-    }
-</style>

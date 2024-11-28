@@ -1,15 +1,10 @@
 <section class="headline-news py-5">
     <div class="container">
-        <!-- Judul -->
         <div class="text-center mb-4">
             <h2 class="fw-bold headline-title">Headline News</h2>
         </div>
-
-        <!-- Carousel -->
         <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <!-- Slides -->
             <div class="carousel-inner">
-                <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-md-6">
@@ -36,8 +31,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Slide 2 -->
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-md-6">
@@ -64,8 +57,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Slide 3 -->
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-md-6">
@@ -93,8 +84,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Controls (removed pagination) -->
             <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -108,12 +97,10 @@
 
     <section class="card-section py-5">
     <div class="text-center mb-4">
-            <h2 class="fw-bold headline-title">Daftar Data</h2>
+            <h2 class="fw-bold headline-title">Data Terkini</h2>
     </div>
         <div class="container">
-            <!-- Cards -->
             <div class="row g-4">
-                <!-- Card Loop -->
                 <div class="col-md-3">
                     <div class="card shadow-sm">
                         <img src="/logos/Cover image.png" class="card-img-top" alt="Image">
@@ -234,11 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ulangi 7 kali untuk contoh -->
-                <!-- Salinan Card -->
             </div>
-
-            <!-- Lihat Semua Data -->
             <div class="text-center mt-4">
                 <button class="btn btn-outline-danger px-5 py-2">Lihat Semua Data</button>
             </div>

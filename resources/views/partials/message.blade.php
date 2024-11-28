@@ -1,5 +1,6 @@
 <section class="py-5 bg-light" style="background: linear-gradient(135deg, #c3e8f8, #ffffff, #ffe5b4);">
     <div class="container bg-warning p-4 rounded-3 position-relative" style="max-height: 450px; overflow: hidden;">
+    <div class="custom-border"></div>
         <img src="{{ asset('/logos/Lambang_Kota_Pariaman.png') }}" alt="Logo Pariaman" 
              style="width: 70px; position: absolute; top: 0; left: 30px;">
 
@@ -24,5 +25,7 @@
                      style="max-width: 300px; position: relative; right: -20px; top: -10px;">
             </div>
         </div>
+        
     </div>
 </section>
+

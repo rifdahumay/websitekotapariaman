@@ -1,7 +1,6 @@
-<!-- resources/views/partials/service_cards.blade.php -->
-<div class="row g-3 justify-content-center">
+<div class="horizontal-layout">
     @foreach ($services as $service)
-        <div class="col-md-4 col-sm-6 col-lg-3">
+        <div class="service-card">
             <div class="card shadow border-0">
                 <img src="{{ $service['image'] }}" class="card-img-top" alt="{{ $service['title'] }}">
                 <div class="card-body text-center">
@@ -14,4 +13,3 @@
         </div>
     @endforeach
 </div>
-

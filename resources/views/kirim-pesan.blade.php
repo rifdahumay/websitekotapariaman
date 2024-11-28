@@ -8,8 +8,6 @@
     
     <form action="{{ route('pesan.store') }}" method="POST">
       @csrf
-
-      <!-- Nama -->
       <div class="mb-4">
         <label for="name" class="form-label fw-semibold">Nama <span class="text-danger">*</span></label>
         <div class="input-group shadow-sm">
@@ -19,8 +17,6 @@
           <input type="text" class="form-control border-2 border-primary" id="name" name="name" placeholder="Masukkan nama Anda" required>
         </div>
       </div>
-
-      <!-- Email -->
       <div class="mb-4">
         <label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
         <div class="input-group shadow-sm">
@@ -30,8 +26,6 @@
           <input type="email" class="form-control border-2 border-primary" id="email" name="email" placeholder="Masukkan email Anda" required>
         </div>
       </div>
-
-      <!-- Pesan -->
       <div class="mb-4">
         <label for="message" class="form-label fw-semibold">Pesan <span class="text-danger">*</span></label>
         <div class="input-group shadow-sm">
@@ -41,8 +35,6 @@
           <textarea class="form-control border-2 border-primary" id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
         </div>
       </div>
-
-      <!-- Tombol -->
       <div class="text-center">
         <button type="submit" class="btn btn-danger btn-lg px-4 py-2 fw-semibold shadow">
           <i class="fas fa-paper-plane me-2"></i>Kirim Pesan

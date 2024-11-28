@@ -1,6 +1,8 @@
 <!-- resources/views/partials/public_services.blade.php -->
 <section id="public-services" class="container my-5">
-    <h2 class="section-header text-center mb-4">Informasi Layanan Publik</h2>
+<div class="text-center mb-4">
+            <h2 class="fw-bold headline-title">Informasi Layanan Publik</h2>
+    </div>
     <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">Show All</button>
@@ -38,3 +40,5 @@
         </div>
     </div>
 </section>
+
+

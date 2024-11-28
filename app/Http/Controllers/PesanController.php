@@ -8,7 +8,6 @@ class PesanController extends Controller
 {
     public function store(Request $request)
     {
-        // Validasi input
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email',

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash Screen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/logos/Lambang Kota Pariaman.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/logos/Lambang Kota Pariaman.png" type="image/x-icon">
     <style>
         body {
             margin: 0;
@@ -13,7 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to bottom, #f0f8ff, #ffd700); /* Gradasi biru muda ke kuning */
+            background: linear-gradient(to top, #256ef5, #fcff36); /* Warna biru ke kuning kesamping */
             overflow: hidden;
         }
 
@@ -75,11 +77,11 @@
 <body>
     <div class="splash-container">
         <img src="/logos/Lambang_Kota_Pariaman.png" alt="Logo Kota Pariaman" class="logo">
-        <p class="text-animation">Website Kota Pariaman</p>
+        <h1 class="text-animation">Portal Website Resmi</h1>
+        <h2 class="text-animation">Pemerintah Kota Pariaman</h2>
     </div>
 
     <script>
-        // Redirect to the main page after 3 seconds
         setTimeout(() => {
             window.location.href = "/home";
         }, 3000);
