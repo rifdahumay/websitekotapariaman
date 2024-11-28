@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="landing" style="color: white; font-size: 12px;">Beranda</a>
+                    <a class="nav-link active" href="{{ route('landing') }}" style="color: white; font-size: 12px;">Beranda</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 12px;">
@@ -34,13 +34,13 @@
                         Pemerintahan
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="pemerintahanDropdown">
-                        <li><a class="dropdown-item" href="#eksekutif">Eksekutif</a></li>
-                        <li><a class="dropdown-item" href="#legislatif">Legislatif</a></li>
-                        <li><a class="dropdown-item" href="#perangkat">Perangkat Daerah</a></li>
-                        <li><a class="dropdown-item" href="#sekre">Sekretariat Daerah</a></li>
-                        <li><a class="dropdown-item" href="#kecamatan">Kecamatan</a></li>
-                        <li><a class="dropdown-item" href="#desa">Desa</a></li>
-                        <li><a class="dropdown-item" href="#kelurahan">Kelurahan</a></li>
+                        <li><a class="dropdown-item" href="{{ route('pemerintahan.eksekutif') }}">Eksekutif</a></li>
+                        <li><a class="dropdown-item" href="{{ route('pemerintahan.legislatif') }}">Legislatif</a></li>
+                        <li><a class="dropdown-item" href="{{ route('pemerintahan.perangkat_daerah') }}">Perangkat Daerah</a></li>
+                        <li><a class="dropdown-item" href="{{ route('pemerintahan.sekretariat_daerah') }}">Sekretariat Daerah</a></li>
+                        <li><a class="dropdown-item" href="{{ route('pemerintahan.kecamatan') }}">Kecamatan</a></li>
+                        <li><a class="dropdown-item" href="{{ route('pemerintahan.desa') }}">Desa</a></li>
+                        <li><a class="dropdown-item" href="{{ route('pemerintahan.kelurahan') }}">Kelurahan</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

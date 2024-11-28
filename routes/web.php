@@ -14,6 +14,10 @@ Route::get('/landing', function () {
     return view('landing');  
 });
 
+Route::get('/landing', function () {
+    return view('landing');
+})->name('landing');
+
 Route::get('/kirim-pesan', function () {
     return view('kirim-pesan');
 });
@@ -62,8 +66,44 @@ use App\Http\Controllers\NewsController;
 Route::get('/berita', [NewsController::class, 'index'])->name('berita.index');
 
 
+use App\Http\Controllers\PemerintahanController;
+
+Route::prefix('pemerintahan')->name('pemerintahan.')->group(function () {
+    Route::get('/eksekutif', [PemerintahanController::class, 'eksekutif'])->name('eksekutif');
+    Route::get('/legislatif', [PemerintahanController::class, 'legislatif'])->name('legislatif');
+    Route::get('/perangkat-daerah', [PemerintahanController::class, 'perangkatDaerah'])->name('perangkat_daerah');
+    Route::get('/sekretariat-daerah', [PemerintahanController::class, 'sekretariatDaerah'])->name('sekretariat_daerah');
+    Route::get('/kecamatan', [PemerintahanController::class, 'kecamatan'])->name('kecamatan');
+    Route::get('/desa', [PemerintahanController::class, 'desa'])->name('desa');
+    Route::get('/kelurahan', [PemerintahanController::class, 'kelurahan'])->name('kelurahan');
+});
 
 
+Route::get('/pemerintahan/eksekutif', function () {
+    return view('pemerintahan.eksekutif');
+})->name('pemerintahan.eksekutif');
 
+Route::get('/pemerintahan/legislatif', function () {
+    return view('pemerintahan.legislatif');
+})->name('pemerintahan.legislatif');
 
+Route::get('/pemerintahan/perangkat', function () {
+    return view('pemerintahan.perangkat');
+})->name('pemerintahan.perangkat');
+
+Route::get('/pemerintahan/sekretariat', function () {
+    return view('pemerintahan.sekretariat');
+})->name('pemerintahan.sekretariat');
+
+Route::get('/pemerintahan/kecamatan', function () {
+    return view('pemerintahan.kecamatan');
+})->name('pemerintahan.kecamatan');
+
+Route::get('/pemerintahan/desa', function () {
+    return view('pemerintahan.desa');
+})->name('pemerintahan.desa');
+
+Route::get('/pemerintahan/kelurahan', function () {
+    return view('pemerintahan.kelurahan');
+})->name('pemerintahan.kelurahan');
 
