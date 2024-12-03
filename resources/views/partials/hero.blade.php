@@ -1,4 +1,3 @@
-
 <header style="position: relative; background: url('/logos/background.png') no-repeat center center/cover; height: 600px; width: 100vw; color: white; overflow: hidden; top: 30px;">
     
     <div class="container-fluid h-100 d-flex flex-column justify-content-center align-items-center position-absolute text-center" style="top: -120px;">

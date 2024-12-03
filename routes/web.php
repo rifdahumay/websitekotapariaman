@@ -107,3 +107,21 @@ Route::get('/pemerintahan/kelurahan', function () {
     return view('pemerintahan.kelurahan');
 })->name('pemerintahan.kelurahan');
 
+use App\Http\Controllers\TransparansiController;
+Route::get('/transparansi', [TransparansiController::class, 'index'])->name('transparansi.index');
+Route::get('/transparansi/anggaran', [TransparansiController::class, 'anggaran'])->name('transparansi.anggaran');
+Route::get('/transparansi/proyek', [TransparansiController::class, 'proyek'])->name('transparansi.proyek');
+Route::get('/transparansi/statistik', [TransparansiController::class, 'statistik'])->name('transparansi.statistik');
+
+Route::view('/layanan', 'informasi.layanan')->name('layanan');
+Route::view('/agenda', 'informasi.agenda')->name('agenda');
+Route::view('/pengumuman', 'informasi.pengumuman')->name('pengumuman');
+Route::view('/infografis', 'informasi.infografis')->name('infografis');
+Route::view('/download', 'informasi.download')->name('download');
+Route::view('/penghargaan', 'informasi.penghargaan')->name('penghargaan');
+Route::view('/faq', 'informasi.faq')->name('faq');
+
+use App\Http\Controllers\ServiceController;
+
+Route::get('/layanan', [ServiceController::class, 'index'])->name('layanan');
+
