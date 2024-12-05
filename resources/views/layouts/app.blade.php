@@ -15,16 +15,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <style>
     
 
     body {
-      font-family: 'Montserrat', sans-serif;
+        font-family: 'Bricolage Grotesque', sans-serif;
+    }
+    ::-webkit-scrollbar {
+        display: none;
     }
     .navbar {
-      font-family: 'Montserrat', sans-serif;
+        font-family: 'Bricolage Grotesque', sans-serif;
     }
     .nav-link {
       margin-left: 20px;
@@ -301,6 +307,7 @@
         background-color: #f8f9fa;
     }
 
+    
 
     .carousel-inner img {
     border-radius: 20px;

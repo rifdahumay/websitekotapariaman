@@ -3,7 +3,7 @@
 @section('content')
 <section class="py-5" style="background: linear-gradient(135deg, #c3e8f8, #ffffff, #ffe5b4); min-height: 100vh;">
   <div class="container py-5 px-4" style="max-width: 800px; background: #ffffff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
-    <h1 class="text-center mb-4 text-primary fw-bold">Kirim Pesan Anda</h1>
+    <h1 class="text-center mb-4 gradient-text fw-bold">Kirim Pesan Anda</h1>
     <p class="text-center mb-5 text-muted">Kami selalu siap mendengarkan aspirasi, kritik, dan saran Anda.</p>
     
     <form action="{{ route('pesan.store') }}" method="POST">
@@ -36,11 +36,45 @@
         </div>
       </div>
       <div class="text-center">
-        <button type="submit" class="btn btn-danger btn-lg px-4 py-2 fw-semibold shadow">
-          <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+        <button type="submit" class="btn-gradient btn-lg px-4 py-2 fw-semibold shadow">
+          <i class="fas fa-paper-plane me-2"></i><span class="gradient-text">Kirim Pesan</span>
         </button>
       </div>
     </form>
   </div>
 </section>
+
+<style>
+  /* Gaya untuk teks gradasi */
+  .gradient-text {
+    background: linear-gradient(90deg, #ff0000, #0000ff); /* Gradasi merah ke biru */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Transparan untuk menampilkan gradasi */
+  }
+
+  /* Gaya tombol */
+  .btn-gradient {
+    background-color: #ffffff; /* Warna dasar putih */
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #ff0000, #0000ff); /* Gradasi pada border */
+    border-image-slice: 1;
+    padding: 0.5rem 1rem;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-gradient:hover {
+    background: linear-gradient(90deg, #ff0000, #0000ff); /* Gradasi penuh saat hover */
+    color: white;
+    border-color: transparent;
+  }
+
+  .btn-gradient:active {
+    background-color: white; /* Warna putih saat diklik */
+    color: black; /* Warna teks hitam */
+    border: 2px solid #ccc; /* Border abu-abu */
+  }
+</style>
 @endsection

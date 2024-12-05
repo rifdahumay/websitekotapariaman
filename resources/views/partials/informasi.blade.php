@@ -1,7 +1,7 @@
 <section class="py-5" style="background: linear-gradient(to bottom, #b3ecff, #ffffff, #fff8e5);">
     <div class="container">
     <div class="text-center mb-4">
-            <h2 class="fw-bold headline-title">Informasi Umum Dinas Kota Pariaman</h2>
+            <h2 class="fw-bold headline-title">Informasi Umum Pemerintah Kota Pariaman</h2>
     </div>
         <div class="row">
             <div class="col-md-4 text-center position-relative">

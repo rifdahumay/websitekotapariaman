@@ -1,10 +1,9 @@
 <footer class="bg-dark text-light py-5">
     <div class="container">
         <div class="row">
-            <!-- Menu Section -->
             <div class="col-md-4 mb-4">
                 <div class="menu-info">
-                    <h5 class="fw-bold">Menu</h5>
+                    <h5 class="fw-bold" style="font-size: 30px;">Menu</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">Beranda</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Profil</a></li>
@@ -13,7 +12,7 @@
                     </ul>
                 </div>
                 <div class="menu-info">
-                    <h5 class="fw-bold">Informasi</h5>
+                    <h5 class="fw-bold" style="font-size: 30px;">Informasi</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">Berita</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Agenda</a></li>
@@ -26,9 +25,8 @@
                 </div>
             </div>
 
-            <!-- Contact Section -->
             <div class="col-md-4 mb-4">
-                <h5 class="fw-bold">Kontak Kami</h5>
+                <h5 class="fw-bold" style="font-size: 30px;">Kontak Kami</h5>
                 <ul class="list-unstyled">
                     <li class="d-flex align-items-start mb-2">
                         <i class="bi bi-building me-2"></i>
@@ -57,7 +55,6 @@
                 </ul>
             </div>
 
-            <!-- Map Section -->
             <div class="col-md-4">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31871.492795632387!2d100.13184438383655!3d-0.6217279518380316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8a63d71f25f%3A0x3040c80b22032d0!2sPariaman%20Beach!5e0!3m2!1sen!2sid!4v1698380648451!5m2!1sen!2sid"
@@ -73,7 +70,6 @@
 
         <hr class="border-light">
 
-        <!-- Footer Bottom -->
         <div class="text-center gradient-footer">
             <p class="mb-0">&copy; 2024 DISKOMINFO KOTA PARIAMAN. All Rights Reserved.</p>
         </div>

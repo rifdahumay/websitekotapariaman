@@ -1,5 +1,4 @@
 @php
-    // Fallback data untuk $news jika belum didefinisikan
     $news = $news ?? [
         [
             'title' => 'Default News Title 1',
@@ -26,7 +25,6 @@
             </div>
         @endforeach
     </div>
-    <!-- Controls -->
     <button 
         class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-3 py-2 rounded-full hover:bg-blue-600" 
         onclick="prevSlide()">
@@ -60,7 +58,6 @@
         showSlide(currentSlide);
     }
 
-    // Optional: Automatically cycle slides
     setInterval(() => {
         nextSlide();
     }, 5000);

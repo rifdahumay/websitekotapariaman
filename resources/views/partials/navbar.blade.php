@@ -56,7 +56,7 @@
                         <li><a class="dropdown-item" href="{{ route('layanan') }}">Layanan</a></li>
                         <li><a class="dropdown-item" href="{{ route('agenda') }}">Agenda</a></li>
                         <li><a class="dropdown-item" href="{{ route('pengumuman') }}">Pengumuman</a></li>
-                        <li><a class="dropdown-item" href="{{ route('infografis') }}">Infografis</a></li>
+                        <li><a class="dropdown-item" href="{{ route('infografi') }}">Infografis</a></li>
                         <li><a class="dropdown-item" href="{{ route('download') }}">Download</a></li>
                         <li><a class="dropdown-item" href="{{ route('penghargaan') }}">Penghargaan</a></li>
                         <li><a class="dropdown-item" href="{{ route('faq') }}">FAQ</a></li>

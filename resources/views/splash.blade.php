@@ -15,7 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to top, #256ef5, #fcff36); /* Warna biru ke kuning kesamping */
+            background: linear-gradient(to top, #256ef5, #fcff36); 
             overflow: hidden;
         }
 

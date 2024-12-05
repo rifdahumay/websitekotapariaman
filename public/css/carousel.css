@@ -1,0 +1,37 @@
+.carousel-3d {
+    perspective: 1000px;
+}
+
+.carousel-card {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform-origin: center;
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.carousel-card:hover {
+    transform: scale(1.05) rotateY(10deg) rotateX(10deg);
+    opacity: 1;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-inner .active .carousel-card {
+    transform: scale(1) rotateY(0deg) rotateX(0deg);
+    opacity: 1;
+}
+
+.carousel-container {
+    padding: 20px;
+    position: relative;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}

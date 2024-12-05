@@ -27,7 +27,6 @@
     <p class="text-center mb-4" style="font-size: 18px;">Informasi tentang proyek dan pengadaan barang/jasa Pemerintah Kota Pariaman.</p>
 
     <div class="row">
-        <!-- Proyek Baru -->
         <div class="col-md-6 mb-4">
             <div class="card shadow-sm">
                 <div class="card-body">
@@ -37,8 +36,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Informasi Pengadaan -->
         <div class="col-md-6 mb-4">
             <div class="card shadow-sm">
                 <div class="card-body">
@@ -49,8 +46,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Tabel Detail Proyek -->
     <div class="row mt-4">
         <div class="col-12">
             <h2 class="text-center" style="color: #a51212;">Detail Proyek Berjalan</h2>

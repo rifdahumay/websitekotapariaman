@@ -60,24 +60,21 @@
 </section>
 
 <style>
-    /* Efek Hover pada Link */
 .breadcrumb a {
-    color: #007bff; /* Biru */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transisi halus */
+    color: #007bff; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .breadcrumb a:hover {
-    color: #0056b3; /* Warna biru yang lebih gelap saat hover */
+    color: #0056b3; 
     text-decoration: underline;
-    transform: translateY(-2px); /* Efek mengangkat sedikit saat hover */
+    transform: translateY(-2px);
 }
 
-/* Mengubah breadcrumb aktif dengan warna lebih ringan */
 .breadcrumb .breadcrumb-item.active {
-    color: #6c757d; /* Warna abu-abu yang lebih ringan */
+    color: #6c757d; 
 }
 
-/* Memberikan padding ekstra agar breadcrumb lebih terlihat */
 .breadcrumb {
     padding-left: 20px;
     padding-right: 20px;

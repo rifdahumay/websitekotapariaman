@@ -75,18 +75,16 @@
     </div>
 </div>
 
-<!-- Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // Struktur Umur Penduduk
     var ageDemographicsCtx = document.getElementById('ageDemographicsChart').getContext('2d');
     var ageDemographicsChart = new Chart(ageDemographicsCtx, {
         type: 'pie', // Pie chart
         data: {
             labels: ['Usia 0-14 Tahun', 'Usia 15-64 Tahun', 'Usia 65 Tahun Ke Atas'],
             datasets: [{
-                data: [25, 60, 15], // Data persentase usia
-                backgroundColor: ['#FF5733', '#33FF57', '#3357FF'], // Warna untuk masing-masing kategori
+                data: [25, 60, 15], 
+                backgroundColor: ['#FF5733', '#33FF57', '#3357FF'], 
                 borderColor: '#fff',
                 borderWidth: 2
             }]
@@ -108,7 +106,6 @@
         }
     });
 
-    // Komposisi Etnis
     var ethnicCompositionCtx = document.getElementById('ethnicCompositionChart').getContext('2d');
     var ethnicCompositionChart = new Chart(ethnicCompositionCtx, {
         type: 'bar', // Bar chart
@@ -116,8 +113,8 @@
             labels: ['Minangkabau', 'Batak', 'Jawa', 'Lainnya'],
             datasets: [{
                 label: 'Persentase Etnis',
-                data: [85, 5, 5, 5], // Persentase masing-masing etnis
-                backgroundColor: '#FF5733', // Warna bar
+                data: [85, 5, 5, 5],
+                backgroundColor: '#FF5733', 
                 borderColor: '#fff',
                 borderWidth: 1
             }]
@@ -140,14 +137,13 @@
         }
     });
 
-    // Sebaran Agama
     var religionDistributionCtx = document.getElementById('religionDistributionChart').getContext('2d');
     var religionDistributionChart = new Chart(religionDistributionCtx, {
-        type: 'pie', // Pie chart
+        type: 'pie', 
         data: {
             labels: ['Islam', 'Kristen Protestan', 'Hindu', 'Budha'],
             datasets: [{
-                data: [95, 3, 1, 1], // Persentase agama
+                data: [95, 3, 1, 1], 
                 backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FF8C00'],
                 borderColor: '#fff',
                 borderWidth: 2

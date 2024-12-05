@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="container mt-4">
-    <!-- Breadcrumb -->
     <div class="breadcrumb-container d-flex align-items-center mb-4 bg-light p-3 rounded shadow-sm">
         <nav aria-label="breadcrumb" class="flex-grow-1">
             <ol class="breadcrumb mb-0">
@@ -22,15 +21,10 @@
             </ol>
         </nav>
     </div>
-
-    <!-- Main Content -->
     <div class="row">
-        <!-- Sidebar -->
         <div class="col-md-3">
             @include('pemerintahan.sidebar')
         </div>
-
-        <!-- Main Content -->
         <div class="col-md-9">
             <h1 class="text-center text-danger">Sekretariat Daerah</h1>
             <p class="fs-5 text-muted text-center">Informasi tentang Sekretariat Daerah di Kota Pariaman.</p>

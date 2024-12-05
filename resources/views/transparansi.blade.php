@@ -21,8 +21,7 @@
     <h1 class="text-center mb-4" style="color: #a51212; font-weight: bold;">Transparansi Pemerintahan</h1>
     <p class="text-center mb-5" style="font-size: 18px;">Berikut adalah informasi terkait transparansi pemerintahan Kota Pariaman.</p>
 
-    <div class="row g-4 mb-5">
-        <!-- Informasi Anggaran -->
+    <div class="row g-5 mb-5">
         <div class="col-md-4">
             <div class="card shadow-sm border-0 h-100">
                 <div class="card-body text-center">
@@ -32,7 +31,6 @@
                 </div>
             </div>
         </div>
-        <!-- Proyek dan Pengadaan -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0 h-100">
                 <div class="card-body text-center">
@@ -42,7 +40,6 @@
                 </div>
             </div>
         </div>
-        <!-- Data Statistik -->
         <div class="col-md-4">
             <div class="card shadow-sm border-0 h-100">
                 <div class="card-body text-center">

@@ -10,7 +10,6 @@
     </div>
 
     <div class="accordion" id="faqAccordion">
-        <!-- FAQ 1 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -23,8 +22,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 2 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -37,8 +34,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 3 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -51,8 +46,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 4 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -65,8 +58,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 5 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingFive">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -79,8 +70,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 6 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingSix">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -93,8 +82,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 7 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingSeven">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
@@ -107,8 +94,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 8 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingEight">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
@@ -121,8 +106,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 9 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingNine">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
@@ -135,8 +118,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FAQ 10 -->
         <div class="accordion-item shadow-sm mb-3 border-0">
             <h2 class="accordion-header" id="headingTen">
                 <button class="accordion-button rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
@@ -152,32 +133,31 @@
     </div>
 </section>
 <style>
-    /* Menyesuaikan tampilan accordion agar lebih menarik */
 .accordion-button {
-    background-color: #f8f9fa;  /* Warna latar belakang tombol accordion */
-    color: #495057;  /* Warna teks */
-    border-radius: 8px;  /* Sudut membulat pada tombol */
+    background-color: #f8f9fa;  
+    color: #495057;  
+    border-radius: 8px; 
     padding: 16px 20px;
     font-size: 1.1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .accordion-button:hover {
-    background-color: #e9ecef;  /* Warna latar belakang saat hover */
-    transform: scale(1.02);  /* Efek zoom ringan pada tombol */
+    background-color: #e9ecef;  
+    transform: scale(1.02); 
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #cce5ff;  /* Warna latar belakang saat open */
-    color: #004085;  /* Warna teks saat open */
+    background-color: #cce5ff;  
+    color: #004085;  
 }
 
 .accordion-body {
     font-size: 1rem;
     line-height: 1.6;
-    color: #6c757d;  /* Warna teks deskripsi */
+    color: #6c757d; 
     padding: 15px 20px;
-    background-color: #f1f3f5;  /* Latar belakang konten body */
+    background-color: #f1f3f5;
 }
 
 .accordion-item {

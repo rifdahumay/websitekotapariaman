@@ -116,7 +116,7 @@ Route::get('/transparansi/statistik', [TransparansiController::class, 'statistik
 Route::view('/layanan', 'informasi.layanan')->name('layanan');
 Route::view('/agenda', 'informasi.agenda')->name('agenda');
 Route::view('/pengumuman', 'informasi.pengumuman')->name('pengumuman');
-Route::view('/infografis', 'informasi.infografis')->name('infografis');
+Route::view('/infografi', 'informasi.infografi')->name('infografi');
 Route::view('/download', 'informasi.download')->name('download');
 Route::view('/penghargaan', 'informasi.penghargaan')->name('penghargaan');
 Route::view('/faq', 'informasi.faq')->name('faq');
@@ -124,4 +124,7 @@ Route::view('/faq', 'informasi.faq')->name('faq');
 use App\Http\Controllers\ServiceController;
 
 Route::get('/layanan', [ServiceController::class, 'index'])->name('layanan');
+
+
+
 
