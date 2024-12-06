@@ -125,6 +125,3 @@ use App\Http\Controllers\ServiceController;
 
 Route::get('/layanan', [ServiceController::class, 'index'])->name('layanan');
 
-
-
-

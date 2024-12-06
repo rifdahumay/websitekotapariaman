@@ -26,6 +26,8 @@
     body {
         font-family: 'Bricolage Grotesque', sans-serif;
     }
+
+    
     ::-webkit-scrollbar {
         display: none;
     }
@@ -133,7 +135,7 @@
 }
 
     .headline-title {
-        background: linear-gradient(to right, #990000, #550000); 
+        background: linear-gradient(to right, red, blue); 
         color: white;
         padding: 10px 30px;
         border-radius: 5px;
@@ -953,6 +955,7 @@
           }
       });
   });
+  
   
   </script>
 </body>

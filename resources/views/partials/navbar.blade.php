@@ -1,12 +1,13 @@
-<nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #a51212, #3b3b3b); color: white; font-family: 'Montserrat', sans-serif;">
+<nav class="navbar navbar-expand-lg" id="navbar" style="background: transparent; color: white; font-family: 'Bricolage Grotesque', sans-serif;">
+
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="/logos/Lambang_Kota_Pariaman.png" alt="Logo Kota Pariaman" style="height: 50px; margin-right: 5px;">
         </a>
         <div class="d-flex flex-column align-items-start">
-            <h1 class="m-0" style="font-size: 13px; font-weight: bold;">WEBSITE RESMI PEMERINTAH</h1>
-            <span style="font-size: 13px; font-weight: bold;">KOTA PARIAMAN</span>
-            <span style="font-size: 12px;">www.pariamankota.go.id</span>
+            <h1 class="m-0" style="font-size: 13px; font-weight: bold; background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">WEBSITE RESMI PEMERINTAH</h1>
+            <span style="font-size: 13px; font-weight: bold; background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">KOTA PARIAMAN</span>
+            <span style="font-size: 12px; background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">www.pariamankota.go.id</span>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color: white;"></span>
@@ -14,10 +15,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('landing') }}" style="color: white; font-size: 12px;">Beranda</a>
+                    <a class="nav-link active" href="{{ route('landing') }}" style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 12px;">Beranda</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 12px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 12px;">
                         Profil Kota
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="profilDropdown">
@@ -29,7 +30,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="pemerintahanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 12px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="pemerintahanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 12px;">
                         Pemerintahan
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="pemerintahanDropdown">
@@ -43,13 +44,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('berita.index') }}" style="color: white; font-size: 12px;">Berita</a>
+                    <a class="nav-link" href="{{ route('berita.index') }}" style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 12px;">Berita</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/transparansi') }}" style="color: white; font-size: 12px;">Transparansi</a>
+                    <a class="nav-link" href="{{ url('/transparansi') }}" style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 12px;">Transparansi</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="informasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 12px;">
+                    <a class="nav-link dropdown-toggle" href="#" id="informasiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: linear-gradient(to right, red, blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 12px;">
                         Informasi
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="informasiDropdown">

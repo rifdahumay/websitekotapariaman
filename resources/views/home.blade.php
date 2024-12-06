@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
     <style>
@@ -24,10 +25,10 @@
             position: relative;
             z-index: 1;
             background: linear-gradient(to top, transparent, rgba(255, 215, 0, 0.8)); 
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
             color: white;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Bricolage Grotesque', sans-serif;
             display: flex; 
             flex-direction: column; 
             justify-content: center; 
@@ -47,28 +48,34 @@
         }
 
         .btn-warning {
-          padding: 12px 30px;
-          font-size: 18px;
-          border-radius: 25px;
-          text-transform: uppercase;
-          background: linear-gradient(45deg, #ff0000, #FFD700); 
-          color: white;
-          border: none;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-          transition: all 0.3s ease;
-      }
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ff0000, #FFD700); 
+            color: white;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
 
-      .btn-warning:hover {
-          background: linear-gradient(45deg, #FF6347, #FFD700); 
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-          transform: translateY(-5px); 
-      }
+        .btn-warning:hover {
+            background: linear-gradient(45deg, #FF6347, #FFD700); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px); 
+        }
 
         .card-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
             margin-top: 40px;
         }
 
-        .icon-box {
+        .card-container .icon-box {
+            flex: 0 0 calc(25% - 20px);
+            max-width: calc(25% - 20px);
             background-color: #fff;
             padding: 40px;
             border-radius: 10px;
@@ -76,14 +83,17 @@
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
-        .icon-box:hover {
+
+        .card-container .icon-box:hover {
             transform: scale(1.1);
             box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
         }
-        .icon-box i {
+
+        .card-container .icon-box i {
             font-size: 40px;
             color: #FFD700;
         }
+
         .icon-title {
             margin-top: 10px;
             font-size: 16px;
@@ -91,10 +101,6 @@
         }
 
         @media (max-width: 768px) {
-            .card-container {
-                margin-top: 30px;
-            }
-
             .content h1 {
                 font-size: 30px;
             }
@@ -108,11 +114,13 @@
                 padding: 10px 20px;
             }
 
-            .icon-box {
+            .card-container .icon-box {
+                flex: 0 0 calc(50% - 20px);
+                max-width: calc(50% - 20px);
                 padding: 20px;
             }
 
-            .icon-box i {
+            .card-container .icon-box i {
                 font-size: 30px;
             }
         }
@@ -132,55 +140,37 @@
         </div>
         
         <div class="container card-container">
-            <div class="row text-center">
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-newspaper"></i>
-                    </div>
-                    <p class="icon-title">Berita Kota</p>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-bar-chart"></i>
-                    </div>
-                    <p class="icon-title">Transparansi</p>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-people"></i>
-                    </div>
-                    <p class="icon-title">Profil Kota</p>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-building"></i>
-                    </div>
-                    <p class="icon-title">Pemerintahan</p>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-list-check"></i>
-                    </div>
-                    <p class="icon-title">Layanan</p>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-calendar"></i>
-                    </div>
-                    <p class="icon-title">Agenda Kota</p>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-megaphone"></i>
-                    </div>
-                    <p class="icon-title">Pengumuman</p>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="icon-box">
-                        <i class="bi bi-trophy"></i>
-                    </div>
-                    <p class="icon-title">Penghargaan</p>
-                </div>
+            <div class="icon-box">
+                <i class="bi bi-newspaper"></i>
+                <p class="icon-title">Berita Kota</p>
+            </div>
+            <div class="icon-box">
+                <i class="bi bi-bar-chart"></i>
+                <p class="icon-title">Transparansi</p>
+            </div>
+            <div class="icon-box">
+                <i class="bi bi-people"></i>
+                <p class="icon-title">Profil Kota</p>
+            </div>
+            <div class="icon-box">
+                <i class="bi bi-building"></i>
+                <p class="icon-title">Pemerintahan</p>
+            </div>
+            <div class="icon-box">
+                <i class="bi bi-list-check"></i>
+                <p class="icon-title">Layanan</p>
+            </div>
+            <div class="icon-box">
+                <i class="bi bi-calendar"></i>
+                <p class="icon-title">Agenda Kota</p>
+            </div>
+            <div class="icon-box">
+                <i class="bi bi-megaphone"></i>
+                <p class="icon-title">Pengumuman</p>
+            </div>
+            <div class="icon-box">
+                <i class="bi bi-trophy"></i>
+                <p class="icon-title">Penghargaan</p>
             </div>
         </div>
     </div>

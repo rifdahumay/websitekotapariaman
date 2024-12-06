@@ -44,6 +44,8 @@
     @include('partials.features')
     @include('partials.infografis')
     @include('partials.message')
+    @include('partials.dark-mode-toggle')
+    @include('partials.back-to-top')
 @endsection
 
 
