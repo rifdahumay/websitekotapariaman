@@ -18,7 +18,7 @@
                 </li>
             </ol>
         </nav>
-        <h1 class="my-4 text-center" style="color: #a51212;">Agenda</h1>
+        <h1 class="my-4 text-center gradient-text fw-bold">Agenda</h1>
         <p class="text-center mb-4">Berikut adalah agenda kegiatan yang akan datang:</p>
         
         <div class="d-flex flex-wrap justify-content-center gap-4">

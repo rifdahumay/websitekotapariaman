@@ -26,13 +26,52 @@
             @include('pemerintahan.sidebar')
         </div>
         <div class="col-md-9">
-            <h1 class="text-center text-danger">Legislatif</h1>
+            <h1 class="text-center gradient-text fw-bold">Legislatif</h1>
             <p class="fs-5 text-muted text-center">Informasi tentang badan legislatif di Kota Pariaman.</p>
             <div class="content bg-white shadow rounded p-5">
-                <p>
-                    Badan Legislatif di Kota Pariaman diwakili oleh Dewan Perwakilan Rakyat Daerah (DPRD) yang
-                    bertugas sebagai pengawas, penyusun kebijakan, dan penyusun anggaran untuk kemajuan daerah.
-                </p>
+                <div class="row g-4">
+                    @foreach($anggota as $a)
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ $a['foto'] }}" class="card-img-top" alt="Foto {{ $a['nama'] }}">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">{{ $a['nama'] }}</h5>
+                                <p class="card-text text-center">
+                                    <strong>{{ $a['jabatan'] }}</strong> <br>
+                                    Periode: {{ $a['periode'] }}
+                                </p>
+                                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#detailModal{{ $a['id'] }}">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="detailModal{{ $a['id'] }}" tabindex="-1" aria-labelledby="detailModalLabel{{ $a['id'] }}" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="detailModalLabel{{ $a['id'] }}">{{ $a['nama'] }}</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex">
+                                        <img src="{{ $a['foto'] }}" alt="Foto {{ $a['nama'] }}" class="img-fluid me-3" style="width: 150px; height: auto;">
+                                        <div>
+                                            <p><strong>Jabatan:</strong> {{ $a['jabatan'] }}</p>
+                                            <p><strong>Periode:</strong> {{ $a['periode'] }}</p>
+                                            <p><strong>Deskripsi:</strong> {{ $a['deskripsi'] }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
@@ -54,5 +93,17 @@
 
     .breadcrumb i {
         margin-right: 5px;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+    }
+
+    .card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 200px;
+        object-fit: cover;
     }
 </style>

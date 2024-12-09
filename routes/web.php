@@ -125,3 +125,14 @@ use App\Http\Controllers\ServiceController;
 
 Route::get('/layanan', [ServiceController::class, 'index'])->name('layanan');
 
+use App\Http\Controllers\EksekutifController;
+
+Route::get('/pemerintahan/eksekutif', [EksekutifController::class, 'index'])->name('pemerintahan.eksekutif');
+
+use App\Http\Controllers\LegislatifController;
+
+Route::get('/pemerintahan/legislatif', [LegislatifController::class, 'index'])->name('pemerintahan.legislatif');
+
+Route::get('/wisata', function () {
+    return view('wisata'); 
+});

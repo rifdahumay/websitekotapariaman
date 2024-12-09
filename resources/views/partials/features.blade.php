@@ -9,7 +9,7 @@
         <div class="card-body d-flex flex-column justify-content-between">
           <h5 class="card-title text-center">Pantai Gandoriah</h5>
           <p class="card-text text-center">Pantai Gandoriah terkenal dengan keindahan pasir putihnya dan pemandangan matahari terbenam yang memukau.</p>
-          <a href="#" class="btn btn-primary mx-auto">Lihat Selengkapnya</a>
+          <a href="{{ url('/wisata') }}" class="btn btn-primary mx-auto">Lihat Selengkapnya</a>
         </div>
       </div>
       <div class="card shadow-sm h-100" style="flex: 1 1 23%; max-width: 23%;">

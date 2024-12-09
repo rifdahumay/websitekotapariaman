@@ -32,7 +32,7 @@
                 <div class="col-md-8">
                     <div class="content p-5 bg-white shadow rounded">
                         <div class="text-center mb-4">
-                            <h1 class="fw-bold text-danger">Visi dan Misi Kota Pariaman</h1>
+                            <h1 class="gradient-text fw-bold">Visi dan Misi Kota Pariaman</h1>
                             <hr class="w-25 mx-auto" style="border: 2px solid #a51212;">
                         </div>
 

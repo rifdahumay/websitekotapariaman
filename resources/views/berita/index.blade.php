@@ -2,7 +2,6 @@
 
 @section('content')
 
-<!-- Breadcrumb -->
 <div class="container mt-4">
     <div class="breadcrumb-container d-flex align-items-center mb-4 bg-light p-3 rounded shadow-sm">
         <nav aria-label="breadcrumb" class="flex-grow-1">
@@ -20,8 +19,8 @@
     </div>
 </div>
 
-<!-- Carousel -->
 <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+<h1 class="text-center gradient-text fw-bold">Headline News</h1>
     <div class="carousel-inner">
         @foreach ($news as $key => $article)
             <div class="carousel-item @if ($key == 0) active @endif">

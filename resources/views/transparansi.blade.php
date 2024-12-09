@@ -18,7 +18,7 @@
         </ol>
     </nav>
 
-    <h1 class="text-center mb-4" style="color: #a51212; font-weight: bold;">Transparansi Pemerintahan</h1>
+    <h1 class="text-center mb-4 gradient-text fw-bold">Transparansi Pemerintahan</h1>
     <p class="text-center mb-5" style="font-size: 18px;">Berikut adalah informasi terkait transparansi pemerintahan Kota Pariaman.</p>
 
     <div class="row g-5 mb-5">
@@ -51,7 +51,6 @@
         </div>
     </div>
 
-    <!-- Tabel Dokumen Transparansi -->
     <div class="row">
         <div class="col-12">
             <h2 class="text-center mb-4" style="color: #a51212;">Dokumen Transparansi</h2>

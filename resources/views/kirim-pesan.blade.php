@@ -27,6 +27,25 @@
         </div>
       </div>
       <div class="mb-4">
+        <label for="category" class="form-label fw-semibold">Kategori Pesan <span class="text-danger">*</span></label>
+        <select class="form-select shadow-sm border-2 border-primary" id="category" name="category" required>
+          <option value="" disabled selected>Pilih kategori</option>
+          <option value="aspirasi">Aspirasi</option>
+          <option value="kritik">Kritik</option>
+          <option value="saran">Saran</option>
+          <option value="pengaduan">Pengaduan</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label for="priority" class="form-label fw-semibold">Tingkat Prioritas <span class="text-danger">*</span></label>
+        <select class="form-select shadow-sm border-2 border-primary" id="priority" name="priority" required>
+          <option value="" disabled selected>Pilih prioritas</option>
+          <option value="rendah">Rendah</option>
+          <option value="sedang">Sedang</option>
+          <option value="tinggi">Tinggi</option>
+        </select>
+      </div>
+      <div class="mb-4">
         <label for="message" class="form-label fw-semibold">Pesan <span class="text-danger">*</span></label>
         <div class="input-group shadow-sm">
           <span class="input-group-text bg-primary text-white">
@@ -45,19 +64,16 @@
 </section>
 
 <style>
-  /* Gaya untuk teks gradasi */
   .gradient-text {
-    background: linear-gradient(90deg, #ff0000, #0000ff); /* Gradasi merah ke biru */
+    background: linear-gradient(90deg, #ff0000, #0000ff); 
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; /* Transparan untuk menampilkan gradasi */
+    color: transparent; 
   }
-
-  /* Gaya tombol */
   .btn-gradient {
-    background-color: #ffffff; /* Warna dasar putih */
+    background-color: #ffffff;
     border: 2px solid transparent;
-    border-image: linear-gradient(90deg, #ff0000, #0000ff); /* Gradasi pada border */
+    border-image: linear-gradient(90deg, #ff0000, #0000ff); 
     border-image-slice: 1;
     padding: 0.5rem 1rem;
     transition: 0.3s ease-in-out;
@@ -66,15 +82,15 @@
   }
 
   .btn-gradient:hover {
-    background: linear-gradient(90deg, #ff0000, #0000ff); /* Gradasi penuh saat hover */
+    background: linear-gradient(90deg, #ff0000, #0000ff); 
     color: white;
     border-color: transparent;
   }
 
   .btn-gradient:active {
-    background-color: white; /* Warna putih saat diklik */
-    color: black; /* Warna teks hitam */
-    border: 2px solid #ccc; /* Border abu-abu */
+    background-color: white;
+    color: black;
+    border: 2px solid #ccc;
   }
 </style>
 @endsection

@@ -26,7 +26,7 @@
             @include('pemerintahan.sidebar')
         </div>
         <div class="col-md-9">
-            <h1 class="text-center text-danger">Kelurahan</h1>
+            <h1 class="text-center gradient-text fw-bold">Kelurahan</h1>
             <p class="fs-5 text-muted text-center">Informasi tentang kelurahan di Kota Pariaman.</p>
             <div class="content bg-white shadow rounded p-5">
                 <p>

@@ -28,7 +28,7 @@
             </nav>
             <div class="content p-5 bg-white shadow rounded">
                 <div class="text-center mb-4">
-                    <h1 class="fw-bold text-danger">Sejarah Kota Pariaman</h1>
+                    <h1 class="gradient-text fw-bold">Sejarah Kota Pariaman</h1>
                     <hr class="w-25 mx-auto" style="border: 2px solid #a51212;">
                 </div>
 
