@@ -27,7 +27,7 @@
                 <div class="card-body text-center">
                     <h5 class="card-title" style="color: #a51212;">Informasi Anggaran</h5>
                     <p class="card-text">Laporan keuangan, APBD, dan realisasi anggaran.</p>
-                    <a href="{{ url('/transparansi/anggaran') }}" class="btn btn-outline-warning" style="border-color: #a51212; color: #a51212;">Lihat Detail</a>
+                    <a href="{{ url('/transparansi/anggaran') }}" class="btn btn-outline-primary" style="border-color: blue;">Lihat Detail</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <div class="card-body text-center">
                     <h5 class="card-title" style="color: #a51212;">Proyek dan Pengadaan</h5>
                     <p class="card-text">Informasi terkait pengadaan barang dan jasa.</p>
-                    <a href="{{ url('/transparansi/proyek') }}" class="btn btn-outline-warning" style="border-color: #a51212; color: #a51212;">Lihat Detail</a>
+                    <a href="{{ url('/transparansi/proyek') }}" class="btn btn-outline-primary" style="border-color: blue;">Lihat Detail</a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
                 <div class="card-body text-center">
                     <h5 class="card-title" style="color: #a51212;">Data Statistik</h5>
                     <p class="card-text">Data statistik pemerintahan dan masyarakat.</p>
-                    <a href="{{ url('/transparansi/statistik') }}" class="btn btn-outline-warning" style="border-color: #a51212; color: #a51212;">Lihat Detail</a>
+                    <a href="{{ url('/transparansi/statistik') }}" class="btn btn-outline-primary" style="border-color: blue;">Lihat Detail</a>
                 </div>
             </div>
         </div>

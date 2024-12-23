@@ -42,24 +42,71 @@
                     <p class="fs-5 text-muted mt-3">
                         Lambang Kota Pariaman mencerminkan keindahan, semangat, dan identitas budaya yang kuat dari masyarakatnya. Setiap elemen dalam lambang memiliki arti yang mendalam, yang meliputi:
                     </p>
-                    <ul class="list-group list-group-flush fs-5 mt-3">
-                        <li class="list-group-item">
-                            <i class="fas fa-check-circle text-success"></i> **Bintang Emas** melambangkan keimanan dan ketakwaan masyarakat Kota Pariaman.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-check-circle text-success"></i> **Gunung** melambangkan kekayaan alam dan tanah yang subur.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-check-circle text-success"></i> **Laut dan Ombak** melambangkan Kota Pariaman sebagai daerah pesisir dengan sektor pariwisata maritim.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-check-circle text-success"></i> **Padi dan Kapas** melambangkan kemakmuran dan kesejahteraan masyarakat.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-check-circle text-success"></i> **Lingkaran Hijau** melambangkan persatuan, keharmonisan, dan kelestarian lingkungan.
-                        </li>
-                    </ul>
+
+                    <div class="accordion mt-3" id="accordionLambang">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBintang">
+                                <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBintang" aria-expanded="true" aria-controls="collapseBintang">
+                                    <i class="fas fa-check-circle text-success"></i> Bintang Emas
+                                </button>
+                            </h2>
+                            <div id="collapseBintang" class="accordion-collapse collapse show" aria-labelledby="headingBintang" data-bs-parent="#accordionLambang">
+                                <div class="accordion-body">
+                                    Melambangkan keimanan dan ketakwaan masyarakat Kota Pariaman.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGunung">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGunung" aria-expanded="false" aria-controls="collapseGunung">
+                                    <i class="fas fa-check-circle text-success"></i> Gunung
+                                </button>
+                            </h2>
+                            <div id="collapseGunung" class="accordion-collapse collapse" aria-labelledby="headingGunung" data-bs-parent="#accordionLambang">
+                                <div class="accordion-body">
+                                    Melambangkan kekayaan alam dan tanah yang subur.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLaut">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLaut" aria-expanded="false" aria-controls="collapseLaut">
+                                    <i class="fas fa-check-circle text-success"></i> Laut dan Ombak
+                                </button>
+                            </h2>
+                            <div id="collapseLaut" class="accordion-collapse collapse" aria-labelledby="headingLaut" data-bs-parent="#accordionLambang">
+                                <div class="accordion-body">
+                                    Melambangkan Kota Pariaman sebagai daerah pesisir dengan sektor pariwisata maritim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPadiKapas">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePadiKapas" aria-expanded="false" aria-controls="collapsePadiKapas">
+                                    <i class="fas fa-check-circle text-success"></i> Padi dan Kapas
+                                </button>
+                            </h2>
+                            <div id="collapsePadiKapas" class="accordion-collapse collapse" aria-labelledby="headingPadiKapas" data-bs-parent="#accordionLambang">
+                                <div class="accordion-body">
+                                    Melambangkan kemakmuran dan kesejahteraan masyarakat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLingkaran">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLingkaran" aria-expanded="false" aria-controls="collapseLingkaran">
+                                    <i class="fas fa-check-circle text-success"></i> Lingkaran Hijau
+                                </button>
+                            </h2>
+                            <div id="collapseLingkaran" class="accordion-collapse collapse" aria-labelledby="headingLingkaran" data-bs-parent="#accordionLambang">
+                                <div class="accordion-body">
+                                    Melambangkan persatuan, keharmonisan, dan kelestarian lingkungan.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
 
                 <div class="text-center mt-4">
                     <p class="fs-5 fst-italic text-muted">

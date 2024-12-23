@@ -136,3 +136,6 @@ Route::get('/pemerintahan/legislatif', [LegislatifController::class, 'index'])->
 Route::get('/wisata', function () {
     return view('wisata'); 
 });
+
+use App\Http\Controllers\DataTerkiniController;
+Route::get('/data-terkini', [DataTerkiniController::class, 'index'])->name('data-terkini');

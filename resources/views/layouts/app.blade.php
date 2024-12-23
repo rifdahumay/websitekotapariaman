@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  @stack('styles')
   <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <style>
@@ -30,7 +31,52 @@
     background-color: #121212;
     color: #e0e0e0;
 }
+
     
+    .gradient-text {
+        background: linear-gradient(90deg, #ff0000, #0000ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btn-gradient-border {
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, #ff0000, #0000ff);
+        background-color: transparent;
+        color: #ff0000;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-gradient-border:hover {
+        background: linear-gradient(90deg, #ff0000, #0000ff);
+        color: #ffffff;
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        transition: color 0.2s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .breadcrumb a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+    }
+
+    .card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 200px;
+        object-fit: cover;
+    }
 
 body.dark-mode .navbar {
     background-color: #1f1f1f;

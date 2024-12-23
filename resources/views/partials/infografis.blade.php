@@ -58,7 +58,7 @@
         </div>
 
         <div class="text-center mt-4">
-            <a href="#" class="btn btn-primary">Lihat Semua Infografis</a>
+            <a href="{{ route('infografi') }}" class="btn btn-primary">Lihat Semua Infografis</a>
         </div>
     </div>
 </div>

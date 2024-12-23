@@ -40,7 +40,7 @@
                                     <strong>{{ $a['jabatan'] }}</strong> <br>
                                     Periode: {{ $a['periode'] }}
                                 </p>
-                                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#detailModal{{ $a['id'] }}">
+                                <button class="btn btn-gradient-border w-100" data-bs-toggle="modal" data-bs-target="#detailModal{{ $a['id'] }}">
                                     Lihat Detail
                                 </button>
                             </div>

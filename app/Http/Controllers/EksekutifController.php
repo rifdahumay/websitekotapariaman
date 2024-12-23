@@ -11,7 +11,7 @@ class EksekutifController extends Controller
         $pejabat = [
             [
                 'id' => 1,
-                'foto' => 'https://via.placeholder.com/300x200.png?text=Foto+Wali+Kota',
+                'foto' => '/logos/Cover image.png',
                 'nama' => 'Ngatimin van der Woodsen',
                 'jabatan' => 'Wali Kota',
                 'periode' => '2021 - 2026',
@@ -19,7 +19,7 @@ class EksekutifController extends Controller
             ],
             [
                 'id' => 2,
-                'foto' => 'https://via.placeholder.com/300x200.png?text=Foto+Wakil+Wali+Kota',
+                'foto' => '/logos/Cover image.png',
                 'nama' => 'Ngatimin van der Woodsen',
                 'jabatan' => 'Wakil Wali Kota',
                 'periode' => '2021 - 2026',
@@ -27,7 +27,7 @@ class EksekutifController extends Controller
             ],
             [
                 'id' => 3,
-                'foto' => 'https://via.placeholder.com/300x200.png?text=Foto+Sekretaris+Daerah',
+                'foto' => '/logos/Cover image.png',
                 'nama' => 'Ngatimin van der Woodsen',
                 'jabatan' => 'Sekretaris Daerah',
                 'periode' => '2021 - 2026',

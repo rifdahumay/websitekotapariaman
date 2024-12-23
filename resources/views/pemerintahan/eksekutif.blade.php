@@ -2,16 +2,17 @@
 
 @section('content')
 <div class="container mt-4">
+    <!-- Breadcrumb -->
     <div class="breadcrumb-container d-flex align-items-center mb-4 bg-light p-3 rounded shadow-sm">
         <nav aria-label="breadcrumb" class="flex-grow-1">
             <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item">
-                    <a href="{{ route('landing') }}" class="text-primary">
+                    <a href="{{ route('landing') }}" class="text-primary text-decoration-none">
                         <i class="bi bi-house-door"></i> Home
                     </a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="{{ route('pemerintahan.eksekutif') }}" class="text-primary">
+                    <a href="{{ route('pemerintahan.eksekutif') }}" class="text-primary text-decoration-none">
                         <i class="bi bi-building"></i> Pemerintahan
                     </a>
                 </li>
@@ -21,6 +22,8 @@
             </ol>
         </nav>
     </div>
+
+    <!-- Konten Utama -->
     <div class="row">
         <div class="col-md-3">
             @include('pemerintahan.sidebar')
@@ -40,13 +43,14 @@
                                     <strong>{{ $p['jabatan'] }}</strong> <br>
                                     Periode: {{ $p['periode'] }}
                                 </p>
-                                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#detailModal{{ $p['id'] }}">
+                                <button class="btn btn-gradient-border w-100" data-bs-toggle="modal" data-bs-target="#detailModal{{ $p['id'] }}">
                                     Lihat Detail
                                 </button>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Modal -->
                     <div class="modal fade" id="detailModal{{ $p['id'] }}" tabindex="-1" aria-labelledby="detailModalLabel{{ $p['id'] }}" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
@@ -76,35 +80,9 @@
         </div>
     </div>
 </div>
-@endsection
+
 
 <style>
-    .breadcrumb a {
-        text-decoration: none;
-        transition: color 0.2s ease;
-        display: flex;
-        align-items: center;
-    }
 
-    .breadcrumb a:hover {
-        color: #0056b3;
-        text-decoration: underline;
-    }
-
-    .breadcrumb i {
-        margin-right: 5px;
-    }
-
-    .card {
-        border: none;
-        border-radius: 10px;
-    }
-
-    .card img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        height: 200px;
-        object-fit: cover;
-    }
-    
 </style>
+@endsection

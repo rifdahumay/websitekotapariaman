@@ -16,5 +16,5 @@
     @endforeach
 </div>
 <div class="text-center mt-4">
-    <a href="#!" class="btn btn-outline-danger">Lihat Semua Data</a>
+    <a href="{{ route('data-terkini') }}" class="btn btn-outline-danger">Lihat Semua Data</a>
 </div>

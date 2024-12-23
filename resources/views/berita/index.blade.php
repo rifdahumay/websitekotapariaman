@@ -44,7 +44,7 @@
 </div>
 
 <div class="container my-5">
-    <h2 class="text-center mb-4">Berita Terbaru</h2>
+    <h2 class="text-center mb-4 gradient-text fw-bold">Berita Terbaru</h2>
     <div class="row">
         @foreach ($news as $article)
             <div class="col-md-3 mb-3">

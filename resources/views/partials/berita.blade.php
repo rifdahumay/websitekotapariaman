@@ -161,8 +161,9 @@
             </div>
 
             <div class="text-center mt-4">
-                <button class="btn btn-outline-danger px-5 py-2">Lihat Semua Data</button>
+                <a href="{{ route('data-terkini') }}" class="btn btn-outline-danger">Lihat Semua Data</a>
             </div>
+
         </div>
 
 </section>

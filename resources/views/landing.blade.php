@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     @include('partials.hero')
     @include('partials.carousel')
     @include('partials.informasi')
@@ -44,7 +43,7 @@
     @include('partials.features')
     @include('partials.infografis')
     @include('partials.message')
-    @include('partials.dark-mode-toggle')
+    <!-- @include('partials.dark-mode-toggle') -->
     @include('partials.back-to-top')
 @endsection
 

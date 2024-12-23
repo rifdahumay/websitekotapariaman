@@ -5,7 +5,7 @@
                 <div class="menu-info">
                     <h5 class="fw-bold" style="font-size: 30px;">Menu</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="{{ route('landing') }}" class="text-light text-decoration-none">Beranda</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Profil</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Pemerintahan</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Layanan</a></li>
@@ -14,7 +14,7 @@
                 <div class="menu-info">
                     <h5 class="fw-bold" style="font-size: 30px;">Informasi</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Berita</a></li>
+                        <li><a href="{{ route('berita.index') }}" class="text-light text-decoration-none">Berita</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Agenda</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Pengumuman</a></li>
                         <li><a href="#" class="text-light text-decoration-none">Download</a></li>
