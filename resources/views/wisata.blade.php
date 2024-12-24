@@ -1,15 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Header Section -->
 <section class="header-section text-white text-center" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.ayokepariaman.id/wp-content/uploads/2019/12/pantai-gandoriah-1.jpg') no-repeat center center/cover; height: 400px;">
   <div class="container d-flex flex-column justify-content-center align-items-center h-100">
     <h1 class="fw-bold">Pantai Gandoriah</h1>
     <p class="text-white-50">Destinasi Keindahan Alam yang Menawan di Kota Pariaman</p>
   </div>
 </section>
-
-<!-- Section: Services -->
 <section class="py-5" style="background: linear-gradient(120deg, rgba(0, 123, 255, 0.5), rgba(255, 193, 7, 0.5)); backdrop-filter: blur(8px);">
   <div class="container">
     <div class="text-center mb-5">
@@ -17,7 +14,6 @@
       <p class="text-muted">Eksplorasi Pantai Gandoriah dengan berbagai pengalaman seru</p>
     </div>
     <div class="row">
-      <!-- Tentang -->
       <div class="col-md-6 mb-4">
         <div class="p-4 border rounded shadow-sm bg-white">
           <img src="https://www.ayokepariaman.id/wp-content/uploads/2019/12/pantai-gandoriah-1.jpg" alt="Pantai Gandoriah" class="img-fluid rounded mb-3">
@@ -25,7 +21,6 @@
           <p>Pantai Gandoriah adalah ikon wisata utama Kota Pariaman. Terkenal dengan pasir putih yang lembut, ombak yang tenang, dan pemandangan matahari terbenam yang memukau. Selain itu, pantai ini memiliki banyak fasilitas untuk wisatawan, seperti gazebo, restoran, dan penyewaan peralatan bermain air.</p>
         </div>
       </div>
-      <!-- Aktivitas -->
       <div class="col-md-6 mb-4">
         <div class="p-4 border rounded shadow-sm bg-white">
           <h5 class="fw-bold">Aktivitas yang Bisa Dilakukan</h5>
@@ -49,14 +44,12 @@
           </ul>
         </div>
       </div>
-      <!-- Keunikan -->
       <div class="col-md-6 mb-4">
         <div class="p-4 border rounded shadow-sm bg-white">
           <h5 class="fw-bold">Keunikan Pantai Gandoriah</h5>
           <p>Pantai ini memiliki kereta api wisata yang langsung menuju stasiun dekat pantai, satu-satunya di Sumatera Barat. Kereta ini memberikan pengalaman unik kepada wisatawan sambil menikmati pemandangan sepanjang perjalanan. Selain itu, ada juga tradisi lokal "Tabuik" yang rutin diselenggarakan di pantai ini.</p>
         </div>
       </div>
-      <!-- Fasilitas -->
       <div class="col-md-6 mb-4">
         <div class="p-4 border rounded shadow-sm bg-white">
           <h5 class="fw-bold">Fasilitas</h5>
@@ -83,7 +76,6 @@
     </div>
   </div>
 </section>
-<!-- Lokasi Pantai Gandoriah -->
 <section class="py-5" style="background: #f9f9f9;">
   <div class="container">
     <div class="text-center mb-5">
@@ -108,8 +100,6 @@
   </div>
 </section>
 
-
-<!-- Testimonial Section -->
 <section class="py-5 bg-light">
   <div class="container">
     <div class="text-center">
@@ -156,36 +146,34 @@
   }
   section[style*="background"] {
     position: relative;
-    background: white; /* Warna dasar putih */
-    overflow: hidden; /* Untuk menyembunyikan elemen blur yang keluar */
+    background: white;
+    overflow: hidden; 
   }
 
-  /* Efek blur lingkaran di pojok */
   section[style*="background"]::before {
     content: '';
     position: absolute;
-    top: -100px; /* Posisi lingkaran biru */
+    top: -100px;
     left: -100px;
     width: 300px;
     height: 300px;
-    background: rgba(0, 123, 255, 0.5); /* Warna biru */
-    filter: blur(100px); /* Efek blur */
+    background: rgba(0, 123, 255, 0.5); 
+    filter: blur(100px); 
     z-index: 1;
   }
 
   section[style*="background"]::after {
     content: '';
     position: absolute;
-    bottom: -100px; /* Posisi lingkaran kuning */
+    bottom: -100px; 
     right: -100px;
     width: 300px;
     height: 300px;
-    background: rgba(255, 193, 7, 0.5); /* Warna kuning */
-    filter: blur(100px); /* Efek blur */
+    background: rgba(255, 193, 7, 0.5); 
+    filter: blur(100px); 
     z-index: 1;
   }
 
-  /* Memberikan elemen konten prioritas di atas lingkaran blur */
   section[style*="background"] > .container {
     position: relative;
     z-index: 2;
