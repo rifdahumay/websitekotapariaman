@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Breadcrumb -->
 <nav aria-label="breadcrumb" class="my-3">
     <ol class="breadcrumb bg-light p-3 rounded">
         <li class="breadcrumb-item">
