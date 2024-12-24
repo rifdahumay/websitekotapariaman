@@ -162,21 +162,21 @@
 
 .accordion-item {
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Memberikan bayangan halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }
 
 .accordion-item + .accordion-item {
-    margin-top: 15px;  /* Jarak antar item FAQ */
+    margin-top: 15px; 
 }
 
 .fas {
     font-size: 1.4rem;
-    color: #007bff;  /* Warna ikon */
+    color: #007bff;  
     transition: color 0.3s ease;
 }
 
 .accordion-button:hover .fas {
-    color: #0056b3;  /* Warna ikon saat hover */
+    color: #0056b3;  
 }
 
 </style>
