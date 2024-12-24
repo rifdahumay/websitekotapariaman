@@ -1,4 +1,4 @@
-<section id="agenda-pengumuman" class="my-5 custom-bg" style="background: linear-gradient(to top, #fff8e5, #ffffff, #b3ecff);>
+<section id="agenda-pengumuman" class="my-5 custom-bg" style="background: linear-gradient(to top, #fff8e5, #ffffff, #b3ecff)";>
     <div class="custom-border"></div>
     <div class="container">
     <div class="text-center mb-4">
