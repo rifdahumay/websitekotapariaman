@@ -25,7 +25,6 @@
     <h1 class="text-center" style="color: #a51212; font-weight: bold;">Data Statistik</h1>
     <p class="text-center mb-4" style="font-size: 18px;">Berikut adalah informasi statistik penting terkait pembangunan, anggaran, dan pemerintahan Kota Pariaman.</p>
 
-    <!-- Statistik Anggaran -->
     <div class="row mb-4">
         <div class="col-md-6">
             <div class="card shadow-sm">
@@ -36,7 +35,6 @@
             </div>
         </div>
 
-        <!-- Statistik Penduduk -->
         <div class="col-md-6">
             <div class="card shadow-sm">
                 <div class="card-body">
@@ -47,7 +45,6 @@
         </div>
     </div>
 
-    <!-- Tabel Data Statistik -->
     <div class="row mt-4">
         <div class="col-12">
             <h2 class="text-center" style="color: #a51212;">Tabel Data Statistik</h2>
@@ -97,7 +94,6 @@
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // Statistik Anggaran
     const anggaranCtx = document.getElementById('anggaranChart').getContext('2d');
     const anggaranChart = new Chart(anggaranCtx, {
         type: 'bar',
@@ -121,7 +117,6 @@
         }
     });
 
-    // Statistik Penduduk
     const pendudukCtx = document.getElementById('pendudukChart').getContext('2d');
     const pendudukChart = new Chart(pendudukCtx, {
         type: 'line',
