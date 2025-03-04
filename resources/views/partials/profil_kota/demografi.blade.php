@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mt-5">
+<div class="container mb-5 pb-5">
     <div class="row">
 
         <div class="col-md-3">
@@ -33,43 +33,29 @@
                     <hr class="w-25 mx-auto" style="border: 2px solid #a51212;">
                 </div>
 
-                <div class="population-overview mb-4">
-                    <h3 class="text-danger"><i class="fas fa-users"></i> Jumlah Penduduk:</h3>
-                    <p class="fs-5 text-muted">
-                        Kota Pariaman memiliki jumlah penduduk yang terus berkembang dengan angka pertumbuhan yang cukup signifikan. Berdasarkan data terakhir, jumlah penduduk di Kota Pariaman diperkirakan mencapai lebih dari 90.000 jiwa, dengan komposisi penduduk yang didominasi oleh usia produktif.
-                    </p>
-                </div>
+                @forelse ($demografi as $item)
+                    <div class="population-overview mb-4">
+                        <h3 class="text-danger"><i class="fas fa-users"></i> Jumlah Penduduk:</h3>
+                        <p class="fs-5 text-muted">{{ $item->jumlah_penduduk }}</p>
+                    </div>
 
-                <div class="age-demographics mb-4">
-                    <h3 class="text-danger"><i class="fas fa-child"></i> Struktur Umur Penduduk:</h3>
-                    <p class="fs-5 text-muted">
-                        Berikut adalah struktur umur penduduk Kota Pariaman dalam bentuk grafik. Grafik ini menunjukkan proporsi usia penduduk yang terbagi dalam tiga kategori.
-                    </p>
+                    <div class="age-demographics mb-4">
+                        <h3 class="text-danger"><i class="fas fa-child"></i> Struktur Umur Penduduk:</h3>
+                        <p class="fs-5 text-muted">{{ $item->struktur_umur }}</p>
+                    </div>
 
-                    <canvas id="ageDemographicsChart" width="300" height="300"></canvas>
-                    <p class="text-center text-muted">Proporsi penduduk berdasarkan kelompok umur: usia muda, usia produktif, dan usia lanjut.</p>
-                </div>
+                    <div class="ethnic-composition mb-4">
+                        <h3 class="text-danger"><i class="fas fa-users"></i> Komposisi Etnis:</h3>
+                        <p class="fs-5 text-muted">{{ $item->komposisi_etnis }}</p>
+                    </div>
 
-                <div class="ethnic-composition mb-4">
-                    <h3 class="text-danger"><i class="fas fa-users"></i> Komposisi Etnis:</h3>
-                    <p class="fs-5 text-muted">
-                        Grafik berikut menunjukkan komposisi etnis di Kota Pariaman, yang sebagian besar terdiri dari suku Minangkabau.
-                    </p>
-
-                    <canvas id="ethnicCompositionChart" width="300" height="300"></canvas>
-                    <p class="text-center text-muted">Persentase etnis utama di Kota Pariaman: Minangkabau, Batak, Jawa, dan lainnya.</p>
-                </div>
-
-                <div class="religion-distribution mb-4">
-                    <h3 class="text-danger"><i class="fas fa-church"></i> Sebaran Agama:</h3>
-                    <p class="fs-5 text-muted">
-                        Sebaran agama di Kota Pariaman mayoritas dianut oleh agama Islam, dengan persentase kecil untuk agama Kristen Protestan, Hindu, dan Budha.
-                    </p>
-
-                    <canvas id="religionDistributionChart" width="300" height="300"></canvas>
-                    <p class="text-center text-muted">Persentase pemeluk agama di Kota Pariaman, mayoritas beragama Islam.</p>
-                </div>
-
+                    <div class="religion-distribution mb-4">
+                        <h3 class="text-danger"><i class="fas fa-church"></i> Sebaran Agama:</h3>
+                        <p class="fs-5 text-muted">{{ $item->sebaran_agama }}</p>
+                    </div>
+                @empty
+                    <p class="text-muted">Data demografi tidak tersedia.</p>
+                @endforelse
             </div>
         </div>
     </div>

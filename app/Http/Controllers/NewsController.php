@@ -3,28 +3,24 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Http;
+use App\Models\News;
+use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
     public function index()
     {
-        $apiKey = '2cc1d34077774b4cb0c6ef9c3aaebc1a';
-        $url = 'https://newsapi.org/v2/top-headlines';
+        // Mengambil semua data berita dari database
+        $news = News::all();
 
-        $response = Http::get($url, [
-            'apiKey' => $apiKey,
-            'category' => 'general',
-            'language' => 'en',
-        ]);
-
-        $news = $response->json();
-
-        if (isset($news['articles'])) {
-            return view('berita.index', ['news' => $news['articles']]);
-        } else {
-            return view('berita.index')->with('error', 'No news available.');
-        }
+        // Mengirim data berita ke view
+        return view('berita.index', compact('news'));
     }
-}
 
+    public function show($id)
+    {
+        $article = News::findOrFail($id);
+        return view('berita.show', compact('article'));
+    }
+
+}

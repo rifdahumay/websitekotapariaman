@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container mt-5">
+<div class="container mb-5 pb-5">
     <div class="row">
 
         <div class="col-md-3">
@@ -29,7 +29,7 @@
 
             <div class="content p-5 bg-white shadow rounded">
                 <div class="text-center mb-4">
-                    <h1 class="fw-bold gradient-text fw-bold">Geografis Kota Pariaman</h1>
+                    <h1 class="gradient-text fw-bold">Geografis Kota Pariaman</h1>
                     <hr class="w-25 mx-auto" style="border: 2px solid #a51212;">
                 </div>
 
@@ -45,48 +45,24 @@
                     </iframe>
                 </div>
 
-                <div class="description">
-                    <h3 class="text-danger"><i class="fas fa-globe"></i> Lokasi dan Batas Wilayah:</h3>
-                    <p class="fs-5 text-muted">
-                        Kota Pariaman terletak di pesisir barat Pulau Sumatera, Sumatera Barat. Kota ini memiliki lokasi strategis sebagai salah satu daerah tujuan wisata dan pusat aktivitas ekonomi.
-                    </p>
-                    <ul class="list-group list-group-flush fs-5 mt-3">
-                        <li class="list-group-item">
-                            <i class="fas fa-arrow-right text-success"></i> **Sebelah Utara**: Berbatasan dengan Kabupaten Padang Pariaman.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-arrow-right text-success"></i> **Sebelah Selatan**: Berbatasan dengan Kabupaten Padang Pariaman.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-arrow-right text-success"></i> **Sebelah Timur**: Berbatasan dengan Kabupaten Padang Pariaman.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-arrow-right text-success"></i> **Sebelah Barat**: Berbatasan dengan Samudera Hindia.
-                        </li>
-                    </ul>
-                </div>
+                @forelse ($geografis as $item)
+                    <div class="mb-3">
+                        <h4 class="text-danger mt-3"><i class="fas fa-globe"></i> Lokasi dan Batas Wilayah:</h4>
+                        <p class="fs-5 text-muted">{{ $item->location_boundary }}</p>
+                    </div>
 
-                <div class="topography mt-4">
-                    <h3 class="text-danger"><i class="fas fa-mountain"></i> Topografi dan Iklim:</h3>
-                    <p class="fs-5 text-muted">
-                        Kota Pariaman memiliki topografi yang bervariasi, mulai dari dataran rendah hingga kawasan pesisir. Iklimnya termasuk ke dalam iklim tropis dengan curah hujan tinggi sepanjang tahun, menjadikannya daerah yang subur.
-                    </p>
-                </div>
+                    <div class="mb-3">
+                        <h4 class="text-danger mt-3"><i class="fas fa-mountain"></i> Topografi dan Iklim:</h4>
+                        <p class="fs-5 text-muted">{{ $item->topography_climate }}</p>
+                    </div>
 
-                <div class="population mt-4">
-                    <h3 class="text-danger"><i class="fas fa-people-arrows"></i> Luas Wilayah dan Penduduk:</h3>
-                    <ul class="list-group list-group-flush fs-5 mt-3">
-                        <li class="list-group-item">
-                            <i class="fas fa-ruler-combined text-success"></i> **Luas Wilayah**: Sekitar 73,36 km².
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-user-friends text-success"></i> **Jumlah Penduduk**: Diperkirakan lebih dari 90.000 jiwa.
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fas fa-tree text-success"></i> **Kepadatan Penduduk**: Mayoritas penduduk bermukim di daerah pesisir dengan aktivitas utama di sektor perikanan dan pariwisata.
-                        </li>
-                    </ul>
-                </div>
+                    <div class="mb-3">
+                        <h4 class="text-danger mt-3"><i class="fas fa-people-arrows"></i> Luas Wilayah dan Penduduk:</h4>
+                        <p class="fs-5 text-muted">{{ $item->area_population }}</p>
+                    </div>
+                @empty
+                    <p class="fs-5 text-muted">Data Geografis tidak ditemukan.</p>
+                @endforelse
             </div>
         </div>
     </div>

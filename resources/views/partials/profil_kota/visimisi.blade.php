@@ -28,7 +28,6 @@
             </nav>
 
             <div class="row">
-
                 <div class="col-md-8">
                     <div class="content p-5 bg-white shadow rounded">
                         <div class="text-center mb-4">
@@ -36,29 +35,26 @@
                             <hr class="w-25 mx-auto" style="border: 2px solid #a51212;">
                         </div>
 
-                        <div class="visi mb-4">
-                            <h3 class="text-danger"><i class="fas fa-eye"></i> Visi:</h3>
-                            <p class="fs-5 fst-italic text-muted">
-                                "Menjadikan Kota Pariaman sebagai kota maju, berdaya saing, dan sejahtera."
-                            </p>
-                        </div>
-                        <div class="misi">
-                            <h3 class="text-danger"><i class="fas fa-bullseye"></i> Misi:</h3>
-                            <ul class="list-group list-group-flush fs-5 mt-3">
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success"></i> Meningkatkan kualitas pendidikan dan kesehatan masyarakat.
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success"></i> Mendorong pertumbuhan ekonomi berbasis pariwisata dan UMKM.
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success"></i> Mewujudkan tata kelola pemerintahan yang bersih, transparan, dan akuntabel.
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success"></i> Memperkuat infrastruktur untuk menunjang kemajuan kota.
-                                </li>
-                            </ul>
-                        </div>
+                        @forelse ($visi_misi as $item)
+                            <div class="visi mb-4">
+                                <h3 class="text-danger"><i class="fas fa-eye"></i> Visi:</h3>
+                                <p class="fs-5 fst-italic text-muted">
+                                    "{{ $item->visi }}"
+                                </p>
+                            </div>
+                            <div class="misi">
+                                <h3 class="text-danger"><i class="fas fa-bullseye"></i> Misi:</h3>
+                                <ul class="list-group list-group-flush fs-5 mt-3">
+                                    @foreach (explode("\n", $item->misi) as $misi)
+                                        <li class="list-group-item">
+                                            <i class="fas fa-check-circle text-success"></i> {{ $misi }}
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @empty
+                            <p class="text-muted">Belum ada data Visi dan Misi yang tersedia.</p>
+                        @endforelse
                     </div>
                 </div>
 
